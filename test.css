@@ -1,0 +1,71 @@
+:root {
+    --primaryFont: #ffffec;
+    --secondaryFont: rgb(157, 157, 157);
+}
+
+.nav {
+    --navWidth: 30vw;
+
+    width: var(--navWidth);
+    list-style-type: none;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav-item {
+    box-sizing: border-box;
+    width: calc(var(--navWidth) / 4);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.headline {
+    font-size: 80px; 
+    padding: 10vw 0 0 0;
+}
+
+.sub-headline {
+    font-size: 22px; 
+    color: var(--secondaryFont);
+    padding: 0 17.5vw;
+    line-height: 30px;
+}
+
+.social-logo {
+    height: 2vw;
+}
+
+.container {
+    height: 100vh;
+    padding: 2vw 0 0 0;
+}
+
+.home {
+    background: linear-gradient(180deg, rgb(15, 23, 37) 11.2%, rgb(33, 57, 84) 91.1%);
+}
+.about {
+    background: linear-gradient(180deg, rgb(33, 57, 84) 11.2%, rgb(3, 56, 62) 91.1%);
+}
+
+hr {
+    width: 40vw;
+    margin: 4vw auto;
+    color: var(--secondaryFont);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+    text-align: center;
+    background-color: #121212;
+    color: var(--primaryFont);
+    font-family: 'Lora', serif;
+}
