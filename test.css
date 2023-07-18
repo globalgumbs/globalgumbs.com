@@ -1,6 +1,7 @@
 :root {
     --primaryFont: #ffffec;
     --secondaryFont: rgb(157, 157, 157);
+    --xPadding: 0 17.5vw;
 }
 
 .nav {
@@ -28,7 +29,7 @@
 .sub-headline {
     font-size: 22px; 
     color: var(--secondaryFont);
-    padding: 0 17.5vw;
+    padding: var(--xPadding);
     line-height: 30px;
 }
 
@@ -44,14 +45,38 @@
 .home {
     background: linear-gradient(180deg, rgb(15, 23, 37) 11.2%, rgb(33, 57, 84) 91.1%);
 }
+
 .about {
     background: linear-gradient(180deg, rgb(33, 57, 84) 11.2%, rgb(3, 56, 62) 91.1%);
+    text-align: left;
 }
+
+
+.about-box {
+    width: 50vw;
+    background-color: rgb(33, 33, 33);
+    margin: 0 auto;
+    border-radius: 3%;
+    font-family: 'Tektur', cursive;
+    font-size: 15px;
+    line-height: 40px;
+    padding: 1vw 3vw 1vw 3vw;
+}
+
+.down-chevron {
+    width: 5vw;
+    padding-top: 5vw;
+}
+
 
 hr {
     width: 40vw;
     margin: 4vw auto;
     color: var(--secondaryFont);
+}
+
+h1 {
+    text-align: left;
 }
 
 a {
