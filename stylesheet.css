@@ -1,6 +1,6 @@
 :root {
     --primaryColor: #000000;
-    --secondaryColor: rgb(157, 157, 157);
+    --secondaryColor: rgb(106, 106, 106);
     --xPadding: 0 20vw;
 }
 
@@ -79,6 +79,8 @@ html {
     text-align: center;
     color: var(--primaryColor);
     font-family: 'Lora', serif;
+    background-image: linear-gradient(to bottom right, #cfd9df 0%, #e2ebf0 100%);
+    
 }
 
 
