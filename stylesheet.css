@@ -2,6 +2,8 @@
     --primaryColor: #000000;
     --secondaryColor: rgb(106, 106, 106);
     --xPadding: 0 20vw;
+
+    --navHoverFontSize: 25px;
 }
 
 .nav {
@@ -12,6 +14,7 @@
     display: flex;
     margin: 0 auto;
     padding: 0;
+    max-height: var(--navHoverFontSize);
 }
 
 .nav-item {
@@ -19,6 +22,11 @@
     width: calc(var(--navWidth) / 2);
     font-size: 20px;
     text-decoration: none;
+}
+
+.nav-item:hover {
+    color: var(--secondaryColor);
+    font-size: var(--navHoverFontSize);
 }
 
 .headline {
@@ -33,9 +41,13 @@
     line-height: 30px;
 }
 
-.social-logo {
+.social {
     height: 3vw;
     padding: 0 0.5vw;
+}
+
+.social:hover {
+    height: 5vw;
 }
 
 .container {
