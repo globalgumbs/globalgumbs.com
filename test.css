@@ -1,11 +1,11 @@
 :root {
-    --primaryFont: #ffffec;
-    --secondaryFont: rgb(157, 157, 157);
-    --xPadding: 0 17.5vw;
+    --primaryColor: #000000;
+    --secondaryColor: rgb(157, 157, 157);
+    --xPadding: 0 20vw;
 }
 
 .nav {
-    --navWidth: 30vw;
+    --navWidth: 20vw;
 
     width: var(--navWidth);
     list-style-type: none;
@@ -16,25 +16,25 @@
 
 .nav-item {
     box-sizing: border-box;
-    width: calc(var(--navWidth) / 4);
+    width: calc(var(--navWidth) / 2);
     font-size: 20px;
     text-decoration: none;
 }
 
 .headline {
-    font-size: 80px; 
-    padding: 10vw 0 0 0;
+    font-size: 60px; 
+    padding: 7.5vw 0 0 0;
 }
 
 .sub-headline {
-    font-size: 22px; 
-    color: var(--secondaryFont);
+    font-size: 20px; 
+    color: var(--secondaryColor);
     padding: var(--xPadding);
     line-height: 30px;
 }
 
 .social-logo {
-    height: 2vw;
+    height: 3.5vw;
 }
 
 .container {
@@ -42,37 +42,28 @@
     padding: 2vw 0 0 0;
 }
 
-.home {
-    background: linear-gradient(180deg, rgb(15, 23, 37) 11.2%, rgb(33, 57, 84) 91.1%);
+.coming-soon {
+    padding-top: 7.5vw;
+    font-size: 25px;
+    color: var(--secondaryColor);
+
+    position: relative;
+    display: inline-block;
+
+    animation: flip 3s infinite;
+    animation-delay: 1s;
 }
 
-.about {
-    background: linear-gradient(180deg, rgb(33, 57, 84) 11.2%, rgb(3, 56, 62) 91.1%);
-    text-align: left;
-}
-
-
-.about-box {
-    width: 50vw;
-    background-color: rgb(33, 33, 33);
-    margin: 0 auto;
-    border-radius: 3%;
-    font-family: 'Tektur', cursive;
-    font-size: 15px;
-    line-height: 40px;
-    padding: 1vw 3vw 1vw 3vw;
-}
 
 .down-chevron {
-    width: 5vw;
+    width: 10vw;
     padding-top: 5vw;
 }
-
 
 hr {
     width: 40vw;
     margin: 4vw auto;
-    color: var(--secondaryFont);
+    color: var(--secondaryColor);
 }
 
 h1 {
@@ -87,10 +78,18 @@ a {
 body {
     margin: 0;
 }
+
 html {
     scroll-behavior: smooth;
     text-align: center;
-    background-color: #121212;
-    color: var(--primaryFont);
+    color: var(--primaryColor);
     font-family: 'Lora', serif;
+}
+
+
+
+@keyframes flip {
+    0%,40% {
+        transform: rotateY(360deg) 
+    }
 }
