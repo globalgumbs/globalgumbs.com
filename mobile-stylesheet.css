@@ -1,11 +1,11 @@
 :root {
     --primaryColor: #000000;
     --secondaryColor: rgb(106, 106, 106);
-    --xPadding: 0 20vw;
+    --xPadding: 0 5vw;
 }
 
 .nav {
-    --navWidth: 20vw;
+    --navWidth: 40vw;
 
     width: var(--navWidth);
     list-style-type: none;
@@ -17,25 +17,25 @@
 .nav-item {
     box-sizing: border-box;
     width: calc(var(--navWidth) / 2);
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
 }
 
 .headline {
-    font-size: 60px; 
-    padding: 7.5vw 0 0 0;
+    font-size: 30px; 
+    padding: 12.5vh 0 0 0;
 }
 
 .sub-headline {
-    font-size: 20px; 
+    font-size: 13px; 
     color: var(--secondaryColor);
-    padding: var(--xPadding);
+    padding: 5vh var(--xPadding);
     line-height: 30px;
 }
 
 .social-logo {
-    height: 3vw;
-    padding: 0 0.5vw;
+    height: 5vh;
+    padding: 5vh 1vh;
 }
 
 .container {
@@ -44,7 +44,7 @@
 }
 
 .coming-soon {
-    padding-top: 7.5vw;
+    padding-top: 10vh;
     font-size: 25px;
     color: var(--secondaryColor);
 
@@ -79,7 +79,7 @@ html {
     text-align: center;
     color: var(--primaryColor);
     font-family: 'Lora', serif;
-    background-image: linear-gradient(to bottom right, #cfd9df 0%, #e8eef2 100%);
+    background-image: linear-gradient(to bottom right, #d1d7da 0%, #e8e8e8 100%);
     
 }
 
