@@ -4,6 +4,7 @@
     --xPadding: 0 20vw;
 
     --navHoverFontSize: 25px;
+    --socialHoverHeight: 5vw;
 }
 
 .nav {
@@ -41,13 +42,17 @@
     line-height: 30px;
 }
 
+.social-bar {
+    height: var(--socialHoverHeight);
+}
+
 .social {
     height: 3vw;
     padding: 0 0.5vw;
 }
 
-.social:hover {
-    height: 5vw;
+.social:hover { 
+    height: var(--socialHoverHeight);
 }
 
 .container {
