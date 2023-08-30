@@ -1,12 +1,11 @@
 :root {
     --primaryColor: #000000;
     --secondaryColor: rgb(70, 69, 69);
-    --xPadding: 0 10vw;
+    --xPadding: 0 20vw;
+    --navWidth: 40vw;
 }
 
 .nav {
-    --navWidth: 40vw;
-
     width: var(--navWidth);
     list-style-type: none;
     display: flex;
@@ -17,7 +16,7 @@
 .nav-item {
     box-sizing: border-box;
     width: calc(var(--navWidth) / 2);
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -28,9 +27,10 @@
 }
 
 .sub-headline {
-    font-size: 13px; 
+    font-size: 15px; 
     color: var(--secondaryColor);
     padding: var(--xPadding);
+    padding-bottom: 5vh;
     line-height: 30px;
 }
 
