@@ -1,9 +1,9 @@
 :root {
     --primaryColor: #000000;
-    --secondaryColor: rgb(106, 106, 106);
-    --xPadding: 0 20vw;
+    --secondaryColor: rgb(70, 69, 69);
+    --xPadding: 0 25vw;
 
-    --navHoverFontSize: 25px;
+    --navHoverFontSize: 30px;
     --socialHoverHeight: 5vw;
 }
 
@@ -16,12 +16,13 @@
     margin: 0 auto;
     padding: 0;
     max-height: var(--navHoverFontSize);
+    font-size: 18px;
 }
 
 .nav-item {
     box-sizing: border-box;
     width: calc(var(--navWidth) / 2);
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
 }
 
@@ -31,14 +32,17 @@
 }
 
 .headline {
-    font-size: 60px; 
-    padding: 7.5vw 0 0 0;
+    font-size: 50px; 
+    font-weight: 600;
+    padding: var(--xPadding);
+    padding-top: 7.5vw;
 }
 
 .sub-headline {
     font-size: 20px; 
     color: var(--secondaryColor);
     padding: var(--xPadding);
+    padding-top: 3vh;
     line-height: 30px;
 }
 
@@ -95,9 +99,8 @@ html {
     scroll-behavior: smooth;
     text-align: center;
     color: var(--primaryColor);
-    font-family: 'Lora', serif;
-    background-image: linear-gradient(to bottom right, #cfd9df 0%, #e8eef2 100%);
-    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(to top left, #dec7a8, #EF3B36);
 }
 
 

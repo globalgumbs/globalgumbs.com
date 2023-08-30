@@ -1,7 +1,7 @@
 :root {
     --primaryColor: #000000;
-    --secondaryColor: rgb(106, 106, 106);
-    --xPadding: 0 5vw;
+    --secondaryColor: rgb(70, 69, 69);
+    --xPadding: 0 10vw;
 }
 
 .nav {
@@ -24,12 +24,13 @@
 .headline {
     font-size: 30px; 
     padding: 12.5vh 0 0 0;
+    font-weight: 600;
 }
 
 .sub-headline {
     font-size: 13px; 
     color: var(--secondaryColor);
-    padding: 5vh var(--xPadding);
+    padding: var(--xPadding);
     line-height: 30px;
 }
 
@@ -45,7 +46,7 @@
 
 .coming-soon {
     padding-top: 10vh;
-    font-size: 25px;
+    font-size: 20px;
     color: var(--secondaryColor);
 
     position: relative;
@@ -78,9 +79,8 @@ html {
     scroll-behavior: smooth;
     text-align: center;
     color: var(--primaryColor);
-    font-family: 'Lora', serif;
-    background-image: linear-gradient(to bottom right, #d1d7da 0%, white 100%);
-    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(to top left, #dec7a8, #EF3B36);
 }
 
 
