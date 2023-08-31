@@ -3,19 +3,20 @@
     --secondaryColor: rgb(70, 69, 69);
     --xPadding: 0 25vw;
 
-    --navHoverFontSize: 30px;
+    --navHoverFontSize: 32.5px;
+    --navWidth: 20vw;
+
     --socialHoverHeight: 5vw;
 }
 
 .nav {
-    --navWidth: 20vw;
-
     width: var(--navWidth);
     list-style-type: none;
     display: flex;
     margin: 0 auto;
     padding: 0;
-    max-height: var(--navHoverFontSize);
+    padding-top: 3vh;
+    height: var(--navHoverFontSize);
     font-size: 18px;
 }
 
@@ -24,6 +25,7 @@
     width: calc(var(--navWidth) / 2);
     font-size: 25px;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .nav-item:hover {
@@ -32,7 +34,7 @@
 }
 
 .headline {
-    font-size: 50px; 
+    font-size: 55px; 
     font-weight: 600;
     padding: var(--xPadding);
     padding-top: 7.5vw;
@@ -59,11 +61,6 @@
     height: var(--socialHoverHeight);
 }
 
-.container {
-    height: 100vh;
-    padding: 2vw 0 0 0;
-}
-
 .coming-soon {
     padding-top: 7.5vw;
     font-size: 25px;
@@ -77,9 +74,9 @@
 }
 
 hr {
-    width: 40vw;
+    width: 60vw;
     margin: 4vw auto;
-    color: var(--secondaryColor);
+    color: white;
 }
 
 h1 {
@@ -93,6 +90,7 @@ a {
 
 body {
     margin: 0;
+    min-height: 100vh;
 }
 
 html {
