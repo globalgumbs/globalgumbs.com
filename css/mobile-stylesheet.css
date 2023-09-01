@@ -57,7 +57,7 @@
 hr {
     width: 40vw;
     margin: 4vw auto;
-    color: var(--secondaryColor);
+    color: var(--primaryColor);
 }
 
 h1 {

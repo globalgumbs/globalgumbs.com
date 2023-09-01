@@ -76,7 +76,7 @@
 hr {
     width: 60vw;
     margin: 4vw auto;
-    color: white;
+    color: var(--primaryColor);
 }
 
 h1 {
