@@ -2,7 +2,7 @@
     --primaryColor: #000000;
     --secondaryColor: rgb(70, 69, 69);
     --xPadding: 0 20vw;
-    --navWidth: 40vw;
+    --navWidth: 60vw;
 }
 
 .nav {
@@ -33,7 +33,7 @@
     color: var(--secondaryColor);
     padding: var(--xPadding);
     padding-bottom: 5vh;
-    line-height: 35px;
+    line-height: 25px;
 }
 
 .social {

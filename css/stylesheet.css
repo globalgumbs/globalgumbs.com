@@ -1,10 +1,10 @@
 :root {
     --primaryColor: #000000;
     --secondaryColor: rgb(70, 69, 69);
-    --xPadding: 0 25vw;
+    --xPadding: 0 30vw;
 
-    --navHoverFontSize: 32.5px;
-    --navWidth: 20vw;
+    --navHoverFontSize: 30px;
+    --navWidth: 25vw;
 
     --socialHoverHeight: 5vw;
 }
@@ -17,27 +17,26 @@
     padding: 0;
     padding-top: 3vh;
     height: var(--navHoverFontSize);
-    font-size: 18px;
 }
 
 .nav-item {
     box-sizing: border-box;
     width: calc(var(--navWidth) / 2);
-    font-size: 25px;
+    font-size: 22.5px;
     text-decoration: none;
     font-weight: 600;
 }
 
 .nav-item:hover {
-    color: var(--secondaryColor);
+    color: white;
     font-size: var(--navHoverFontSize);
 }
 
 .headline {
-    font-size: 55px; 
+    font-size: 48px; 
     font-weight: 600;
     padding: var(--xPadding);
-    padding-top: 7.5vw;
+    padding-top: 10vw;
 }
 
 .sub-headline {
@@ -62,7 +61,7 @@
 }
 
 .coming-soon {
-    padding-top: 7.5vw;
+    padding-top: 3vw;
     font-size: 25px;
     color: var(--secondaryColor);
 
@@ -74,7 +73,7 @@
 }
 
 hr {
-    width: 60vw;
+    width: 40vw;
     margin: 4vw auto;
     color: var(--primaryColor);
 }
