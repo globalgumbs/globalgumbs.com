@@ -1,7 +1,7 @@
 :root {
     --primaryColor: #000000;
     --secondaryColor: rgb(70, 69, 69);
-    --xPadding: 0 20vw;
+    --xPadding: 0 10vw;
     --navWidth: 80vw;
 }
 
@@ -13,6 +13,7 @@
     padding: 0;
     padding-top: 3vh;
     font-weight: 600;
+    text-align: center;
 }
 
 .nav-item {
@@ -24,35 +25,44 @@
 
 .headline {
     font-size: 30px; 
-    padding: 12.5vh 0 0 0;
+    padding: var(--xPadding);
+    padding-top: 5vh;
     font-weight: 600;
 }
 
-.sub-headline {
-    font-size: 15px; 
-    color: var(--secondaryColor);
+.project-box {
     padding: var(--xPadding);
-    padding-bottom: 5vh;
-    line-height: 25px;
+    padding-top: 2vh;
+    padding-bottom: 2vw;
 }
 
-.social {
-    height: 5vh;
-    padding: 5vh 1vh;
-}
-
-
-.coming-soon {
-    padding-top: 10vh;
+.project-title {
     font-size: 20px;
-    color: var(--secondaryColor);
-
-    position: relative;
-    display: inline-block;
-
-    animation: flip 3s infinite;
-    animation-delay: 1s;
+    font-weight: 600;
 }
+
+.project-date {
+    font-size: 17.5px;
+    font-weight: 600;
+    padding-top: 2vh;
+    color: var(--secondaryColor);
+}
+
+.project-body {
+    padding: 2vh 0 2vh 0;
+    font-size: 15px;
+    line-height: 140%;
+}
+
+.yt-video {
+    width: 80vw;
+    height: 22.5vh;
+}
+
+.spacer {
+    height: 10vh;
+}
+
 
 hr {
     width: 40vw;
@@ -60,9 +70,6 @@ hr {
     color: var(--primaryColor);
 }
 
-h1 {
-    text-align: left;
-}
 
 a {
     text-decoration: none;
@@ -76,15 +83,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-    text-align: center;
     color: var(--primaryColor);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background: linear-gradient(to top left, #dec7a8, #EF3B36);
-}
-
-
-@keyframes flip {
-    0%,40% {
-        transform: rotateY(360deg) 
-    }
+    background: linear-gradient(to top left,#9686cd, #dec7a8);
 }
