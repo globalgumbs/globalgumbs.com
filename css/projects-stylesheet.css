@@ -68,6 +68,11 @@
     text-align: left;
 }
 
+.yt-video {
+    width: 30vw;
+    height: 40vh;
+}
+
 
 hr {
     width: 60vw;

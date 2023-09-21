@@ -27,7 +27,6 @@
     padding: var(--xPadding);
     padding-top: 5vh;
     font-weight: 600;
-    color: #7a6da7;
 }
 
 .project-box {
@@ -51,11 +50,12 @@
 .project-body {
     padding: 2vh 0 2vh 0;
     font-size: 15px;
-    line-height: 120%;
+    line-height: 140%;
 }
 
 .yt-video {
     width: 80vw;
+    height: 30vh;
 }
 
 .spacer {

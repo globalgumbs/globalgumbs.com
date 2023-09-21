@@ -17,6 +17,7 @@
     padding: 0;
     padding-top: 3vh;
     height: var(--navHoverFontSize);
+    text-align: center;
 }
 
 .nav-item {
@@ -59,19 +60,6 @@
 .social:hover { 
     height: var(--socialHoverHeight);
 }
-
-.coming-soon {
-    padding-top: 3vw;
-    font-size: 25px;
-    color: var(--secondaryColor);
-
-    position: relative;
-    display: inline-block;
-
-    animation: flip 3s infinite;
-    animation-delay: 1s;
-}
-
 
 hr {
     width: 40vw;
