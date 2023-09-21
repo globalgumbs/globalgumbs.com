@@ -1,7 +1,7 @@
 # globalgumbs.com
 
-Second version of my personal website. Waiting to add more content and features.
+Second version of my personal website.
 
 
 
---updated 8/10/23
+--updated 9/20/23
