@@ -48,13 +48,13 @@
 }
 
 .project-title {
-    font-size: 25px;
+    font-size: 22.5px;
     font-weight: 600;
     float: left;
 }
 
 .project-date {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     float: right;
     color: var(--secondaryColor);
