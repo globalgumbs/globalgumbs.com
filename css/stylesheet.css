@@ -1,7 +1,7 @@
 :root {
     --primaryColor: #000000;
     --secondaryColor: rgb(220, 220, 220);
-    --xPadding: 0 15vw;
+    --xPadding: 0 25vw;
 
     --navHoverFontSize: 22.5px;
     --navWidth: 35vw;
