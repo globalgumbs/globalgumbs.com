@@ -1,6 +1,11 @@
 import json
 import data_retrieval
 import pandas as pd
+import numpy as np
+import mysql.connector as mysql
+from sqlalchemy import create_engine
+import pymysql
+import time
 
 # Define columns (which will be same for db)
 CATEGORIES = ['date', 'home_team', 'away_team', 'home_pts', 'away_pts', 'home_ast', 'away_ast', 'home_dreb', 'away_dreb', 'home_oreb', 'away_oreb', 'home_made_fg', 'away_made_fg', 'home_att_fg', 'away_att_fg', 'home_made_3fg', 'away_made_3fg', 'home_att_3fg', 'away_att_3fg', 'home_made_ft', 'away_made_ft', 'home_att_ft', 'away_att_ft', 'home_blocks', 'away_blocks', 'home_steals', 'away_steals', 'home_to', 'away_to', 'home_pf', 'away_pf']
@@ -102,19 +107,54 @@ def read_json_data(path: str) -> dict:
 def create_df(data: dict) -> pd.DataFrame:
     # Create Pandas DataFrame to add data into
     df = pd.DataFrame(data=data, index=None, columns=CATEGORIES)
+#    print(df)
     return df
 
-def unit_test(df: pd.DataFrame) -> bool:
+def unit_test(df: pd.DataFrame) -> None:
     date = "2021-02-11"
     home_team = "BOSTON CELTICS"
     away_team = "TORONTO RAPTORS"
     home_pts = 120
     away_blocks = 8
+
+    idx = np.where(df['date'] == date)[0]
+    for i in idx:
+        if df.loc[i]["home_team"] == home_team:
+            assert df.loc[i]["date"] == date
+            assert df.loc[i]["away_team"] == away_team
+            assert df.loc[i]["home_pts"] == home_pts
+            assert df.loc[i]["away_blocks"] == away_blocks
+        else: continue
+
+def open_db():
+    db = mysql.connect(
+        host="localhost",
+        port=3306,
+        user="user",
+        password="password"
+    )
+    print("Connection established")
+    return db
+
+def data_to_db(df: pd.DataFrame) -> int:
+    db = open_db()
+    mycursor = db.cursor()
+    mycursor.execute("CREATE TABLE IF NOT EXISTS stats_db.BOX_SCORE_DATA (date VARCHAR(255), home_team VARCHAR(255), away_team VARCHAR(255), home_pts INT, away_pts INT, home_ast INT, away_ast INT, home_dreb INT, away_dreb INT, home_oreb INT, away_oreb INT, home_made_fg INT, away_made_fg INT, home_att_fg INT, away_att_fg INT, home_made_ft INT, away_made_ft INT, home_att_ft INT, away_att_ft INT, home_made_3fg INT, away_made_3fg INT, home_att_3fg INT, away_att_3fg INT, home_blocks INT, away_blocks INT, home_steals INT, away_steals INT, home_to INT, away_to INT, home_pf INT, away_pf INT);")
+    engine = create_engine("mysql+pymysql://{user}:{pw}@{host}/{db}".format(host="localhost", db="stats_db", user="user", pw="password"))
+    res = df.to_sql('BOX_SCORE_DATA', con=engine, if_exists='replace', index=True)
+    db.close
+    return res
     
-    # Find a way to assert that these values are true
-    return True
+def main():
+    df = create_df(read_json_data("C:/Users/alber/OneDrive/Documents/GitHub/HoopsML/scripts/data/saved_data.json"))
+    unit_test(df)
+    print(data_to_db(df))
+
+main()
 
     
-df = create_df(read_json_data("scripts/data/saved_data.json"))
-unit_test(df)
+
+
+
+
 
