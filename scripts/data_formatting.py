@@ -4,8 +4,6 @@ import pandas as pd
 import numpy as np
 import mysql.connector as mysql
 from sqlalchemy import create_engine
-import pymysql
-import time
 
 # Define columns (which will be same for db)
 CATEGORIES = ['date', 'home_team', 'away_team', 'home_pts', 'away_pts', 'home_ast', 'away_ast', 'home_dreb', 'away_dreb', 'home_oreb', 'away_oreb', 'home_made_fg', 'away_made_fg', 'home_att_fg', 'away_att_fg', 'home_made_3fg', 'away_made_3fg', 'home_att_3fg', 'away_att_3fg', 'home_made_ft', 'away_made_ft', 'home_att_ft', 'away_att_ft', 'home_blocks', 'away_blocks', 'home_steals', 'away_steals', 'home_to', 'away_to', 'home_pf', 'away_pf']
