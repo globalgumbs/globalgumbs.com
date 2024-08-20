@@ -1,7 +1,7 @@
 :root {
     --primaryColor: #000000;
     --secondaryColor: rgb(220, 220, 220);
-    --xPadding: 0 15vw;
+    --xPadding: 0 25vw;
 
     --navHoverFontSize: 22.5px;
     --navWidth: 35vw;
@@ -94,6 +94,6 @@ body {
 html {
     scroll-behavior: smooth;
     color: var(--primaryColor);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background: linear-gradient(to top left,#9686cd, #dec7a8);
+    font-family: "Lato", sans-serif;
+    background: linear-gradient(to top left,#9d78dc, #dec7a8);
 }

@@ -1,7 +1,7 @@
 :root {
     --primaryColor: #000000;
     --secondaryColor: rgb(220, 220, 220);
-    --xPadding: 0 25vw;
+    --xPadding: 0 30vw;
 
     --navHoverFontSize: 22.5px;
     --navWidth: 35vw;
@@ -41,11 +41,11 @@
 }
 
 .sub-headline {
-    font-size: 20px; 
+    font-size: 25px; 
     color: var(--primaryColor);
     padding: var(--xPadding);
     padding-top: 3vh;
-    line-height: 30px;
+    line-height: 35px;
 }
 
 .social-bar {
@@ -85,8 +85,9 @@ html {
     scroll-behavior: smooth;
     text-align: center;
     color: var(--primaryColor);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background: linear-gradient(to top left, #dec7a8, #EF3B36);
+    font-family: "Lato", sans-serif;
+    background: linear-gradient(to top left, #dec7a8, #e7807c);
+    max-height: 100vh;
 }
 
 
