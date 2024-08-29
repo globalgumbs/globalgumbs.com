@@ -83,8 +83,3 @@ html {
 }
 
 
-@keyframes flip {
-    0%,40% {
-        transform: rotateY(360deg) 
-    }
-}

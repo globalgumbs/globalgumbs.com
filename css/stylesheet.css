@@ -37,7 +37,7 @@
     font-size: 48px; 
     font-weight: 600;
     padding: var(--xPadding);
-    padding-top: 10vw;
+    padding-top: 10vh;
 }
 
 .sub-headline {
@@ -87,12 +87,4 @@ html {
     color: var(--primaryColor);
     font-family: "Lato", sans-serif;
     background: linear-gradient(to top left, #dec7a8, #e7807c);
-    max-height: 100vh;
-}
-
-
-@keyframes flip {
-    0%,40% {
-        transform: rotateY(360deg) 
-    }
 }
