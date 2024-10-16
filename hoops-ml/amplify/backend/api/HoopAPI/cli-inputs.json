@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "paths": {
+    "/evaluate": {
+      "name": "/evaluate",
+      "lambdaFunction": "HoopAPI",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    }
+  }
+}
