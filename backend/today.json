@@ -1,0 +1,72 @@
+{
+    "0012400072": {
+        "game_id": "0012400072",
+        "home_team_id": "1610612750",
+        "home_team_name": "Minnesota Timberwolves",
+        "away_team_id": "1610612743",
+        "away_team_name": "Denver Nuggets",
+        "prediction": 0.4356817668666858,
+        "home_team_logo": "",
+        "away_team_logo": ""
+    },
+    "0012400064": {
+        "game_id": "0012400064",
+        "home_team_id": "1610612760",
+        "home_team_name": "Oklahoma City Thunder",
+        "away_team_id": "1610612737",
+        "away_team_name": "Atlanta Hawks",
+        "prediction": 0.3038358093918986,
+        "home_team_logo": "",
+        "away_team_logo": ""
+    },
+    "0012400063": {
+        "game_id": "0012400063",
+        "home_team_id": "1610612745",
+        "home_team_name": "Houston Rockets",
+        "away_team_id": "1610612759",
+        "away_team_name": "San Antonio Spurs",
+        "prediction": 0.31474716251404244,
+        "home_team_logo": "",
+        "away_team_logo": ""
+    },
+    "0012400061": {
+        "game_id": "0012400061",
+        "home_team_id": "1610612754",
+        "home_team_name": "Indiana Pacers",
+        "away_team_id": "1610612766",
+        "away_team_name": "Charlotte Hornets",
+        "prediction": 0.2770932639684083,
+        "home_team_logo": "",
+        "away_team_logo": ""
+    },
+    "0012400062": {
+        "game_id": "0012400062",
+        "home_team_id": "1610612742",
+        "home_team_name": "Dallas Mavericks",
+        "away_team_id": "1610612749",
+        "away_team_name": "Milwaukee Bucks",
+        "prediction": 0.42316694619417283,
+        "home_team_logo": "",
+        "away_team_logo": ""
+    },
+    "0012400065": {
+        "game_id": "0012400065",
+        "home_team_id": "1610612756",
+        "home_team_name": "Phoenix Suns",
+        "away_team_id": "1610612747",
+        "away_team_name": "Los Angeles Lakers",
+        "prediction": 0.4164279714699676,
+        "home_team_logo": "",
+        "away_team_logo": ""
+    },
+    "0012400066": {
+        "game_id": "0012400066",
+        "home_team_id": "1610612746",
+        "home_team_name": "Los Angeles Clippers",
+        "away_team_id": "1610612758",
+        "away_team_name": "Sacramento Kings",
+        "prediction": 0.39793561376770203,
+        "home_team_logo": "",
+        "away_team_logo": ""
+    }
+}

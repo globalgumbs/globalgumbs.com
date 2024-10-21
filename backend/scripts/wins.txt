@@ -1,0 +1,30 @@
+* --BOSBoston Celtics	0.78
+z --OKCOklahoma City Thunder	0.695
+x --DENDenver Nuggets	0.695
+x --MINMinnesota Timberwolves	0.683
+y --LACLA Clippers	0.622
+y --DALDallas Mavericks	0.61
+x --NYKNew York Knicks	0.61
+y --MILMilwaukee Bucks	0.598
+xp --NOPNew Orleans Pelicans	0.598
+x --PHXPhoenix Suns	0.598
+x --CLECleveland Cavaliers	0.585
+y --ORLOrlando Magic	0.573
+xp --LALLos Angeles Lakers	0.573
+xp --PHIPhiladelphia 76ers	0.573
+x --INDIndiana Pacers	0.573
+xp --MIAMiami Heat	0.561
+pb --SACSacramento Kings	0.561
+pb --GSWGolden State Warriors	0.561
+e --HOUHouston Rockets	0.5
+pb --CHIChicago Bulls	0.476
+pb --ATLAtlanta Hawks	0.439
+e --BKNBrooklyn Nets	0.39
+e --UTAHUtah Jazz	0.378
+e --MEMMemphis Grizzlies	0.329
+e --TORToronto Raptors	0.305
+e --SASan Antonio Spurs	0.268
+e --CHACharlotte Hornets	0.256
+e --PORPortland Trail Blazers	0.256
+e --WASWashington Wizards	0.183
+e --DETDetroit Pistons	0.171

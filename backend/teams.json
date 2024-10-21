@@ -1,122 +1,692 @@
 {
-  "1610612737": {
-      "abbreviation": "ATL",
-      "teamName": "Atlanta Hawks"
-  },
-  "1610612738": {
-      "abbreviation": "BOS",
-      "teamName": "Boston Celtics"
-  },
-  "1610612751": {
-      "abbreviation": "BKN",
-      "teamName": "Brooklyn Nets"
-  },
-  "1610612766": {
-      "abbreviation": "CHA",
-      "teamName": "Charlotte Hornets"
-  },
-  "1610612741": {
-      "abbreviation": "CHI",
-      "teamName": "Chicago Bulls"
-  },
-  "1610612739": {
-      "abbreviation": "CLE",
-      "teamName": "Cleveland Cavaliers"
-  },
-  "1610612742": {
-      "abbreviation": "DAL",
-      "teamName": "Dallas Mavericks"
-  },
-  "1610612743": {
-      "abbreviation": "DEN",
-      "teamName": "Denver Nuggets"
-  },
-  "1610612765": {
-      "abbreviation": "DET",
-      "teamName": "Detroit Pistons"
-  },
-  "1610612744": {
-      "abbreviation": "GSW",
-      "teamName": "Golden State Warriors"
-  },
-  "1610612745": {
-      "abbreviation": "HOU",
-      "teamName": "Houston Rockets"
-  },
-  "1610612754": {
-      "abbreviation": "IND",
-      "teamName": "Indiana Pacers"
-  },
-  "1610612746": {
-      "abbreviation": "LAC",
-      "teamName": "Los Angeles Clippers"
-  },
-  "1610612747": {
-      "abbreviation": "LAL",
-      "teamName": "Los Angeles Lakers"
-  },
-  "1610612763": {
-      "abbreviation": "MEM",
-      "teamName": "Memphis Grizzlies"
-  },
-  "1610612748": {
-      "abbreviation": "MIA",
-      "teamName": "Miami Heat"
-  },
-  "1610612749": {
-      "abbreviation": "MIL",
-      "teamName": "Milwaukee Bucks"
-  },
-  "1610612750": {
-      "abbreviation": "MIN",
-      "teamName": "Minnesota Timberwolves"
-  },
-  "1610612740": {
-      "abbreviation": "NOP",
-      "teamName": "New Orleans Pelicans"
-  },
-  "1610612752": {
-      "abbreviation": "NYK",
-      "teamName": "New York Knicks"
-  },
-  "1610612760": {
-      "abbreviation": "OKC",
-      "teamName": "Oklahoma City Thunder"
-  },
-  "1610612753": {
-      "abbreviation": "ORL",
-      "teamName": "Orlando Magic"
-  },
-  "1610612755": {
-      "abbreviation": "PHI",
-      "teamName": "Philadelphia 76ers"
-  },
-  "1610612756": {
-      "abbreviation": "PHX",
-      "teamName": "Phoenix Suns"
-  },
-  "1610612757": {
-      "abbreviation": "POR",
-      "teamName": "Portland Trail Blazers"
-  },
-  "1610612758": {
-      "abbreviation": "SAC",
-      "teamName": "Sacramento Kings"
-  },
-  "1610612759": {
-      "abbreviation": "SAS",
-      "teamName": "San Antonio Spurs"
-  },
-  "1610612761": {
-      "abbreviation": "TOR",
-      "teamName": "Toronto Raptors"
-  },
-  "1610612762": {
-      "abbreviation": "UTA",
-      "teamName": "Utah Jazz"
-  },
-  "1610612764": {
-      "abbreviation": "WAS",
-      "teamName": "Washington Wizards"
-  }
+    "1610612737": {
+        "abbreviation": "ATL",
+        "teamName": "Atlanta Hawks",
+        "stats": [
+            -5.0,
+            -2.0,
+            2.0,
+            -4.0,
+            3.0,
+            19.0,
+            2.0,
+            17.0,
+            -13.0,
+            -20.0,
+            -3.0,
+            -3.0,
+            1.0,
+            10.0,
+            0.439
+        ],
+        "logo": "",
+        "gamesPlayed": 2
+    },
+    "1610612738": {
+        "abbreviation": "BOS",
+        "teamName": "Boston Celtics",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.78
+        ],
+        "logo": "",
+        "gamesPlayed": 0
+    },
+    "1610612751": {
+        "abbreviation": "BKN",
+        "teamName": "Brooklyn Nets",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.39
+        ],
+        "logo": "",
+        "gamesPlayed": 0
+    },
+    "1610612766": {
+        "abbreviation": "CHA",
+        "teamName": "Charlotte Hornets",
+        "stats": [
+            -5.0,
+            3.0,
+            3.0,
+            6.0,
+            -5.0,
+            -14.0,
+            5.0,
+            4.0,
+            0.0,
+            2.0,
+            2.0,
+            -3.0,
+            15.0,
+            8.0,
+            0.256
+        ],
+        "logo": "",
+        "gamesPlayed": 2
+    },
+    "1610612741": {
+        "abbreviation": "CHI",
+        "teamName": "Chicago Bulls",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.476
+        ],
+        "logo": "",
+        "gamesPlayed": 0
+    },
+    "1610612739": {
+        "abbreviation": "CLE",
+        "teamName": "Cleveland Cavaliers",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.585
+        ],
+        "logo": "",
+        "gamesPlayed": 0
+    },
+    "1610612742": {
+        "abbreviation": "DAL",
+        "teamName": "Dallas Mavericks",
+        "stats": [
+            25.0,
+            -5.0,
+            1.0,
+            -4.0,
+            5.0,
+            -14.0,
+            -3.0,
+            -7.0,
+            18.0,
+            20.0,
+            5.0,
+            0.0,
+            2.0,
+            -10.0,
+            0.61
+        ],
+        "logo": "",
+        "gamesPlayed": 2
+    },
+    "1610612743": {
+        "abbreviation": "DEN",
+        "teamName": "Denver Nuggets",
+        "stats": [
+            6.0,
+            5.0,
+            -2.0,
+            2.0,
+            -7.0,
+            -22.0,
+            2.0,
+            -9.0,
+            18.0,
+            19.0,
+            3.0,
+            -2.0,
+            -1.0,
+            -9.0,
+            0.695
+        ],
+        "logo": "",
+        "gamesPlayed": 2
+    },
+    "1610612765": {
+        "abbreviation": "DET",
+        "teamName": "Detroit Pistons",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.171
+        ],
+        "logo": "",
+        "gamesPlayed": 0
+    },
+    "1610612744": {
+        "abbreviation": "GSW",
+        "teamName": "Golden State Warriors",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.561
+        ],
+        "logo": "",
+        "gamesPlayed": 0
+    },
+    "1610612745": {
+        "abbreviation": "HOU",
+        "teamName": "Houston Rockets",
+        "stats": [
+            22.0,
+            -7.0,
+            2.0,
+            7.0,
+            7.0,
+            -3.0,
+            6.0,
+            9.0,
+            2.0,
+            6.0,
+            5.0,
+            -1.0,
+            5.0,
+            -1.0,
+            0.5
+        ],
+        "logo": "",
+        "gamesPlayed": 2
+    },
+    "1610612754": {
+        "abbreviation": "IND",
+        "teamName": "Indiana Pacers",
+        "stats": [
+            5.0,
+            -3.0,
+            -3.0,
+            -6.0,
+            5.0,
+            14.0,
+            -5.0,
+            -4.0,
+            0.0,
+            -2.0,
+            -2.0,
+            3.0,
+            -15.0,
+            -8.0,
+            0.573
+        ],
+        "logo": "",
+        "gamesPlayed": 2
+    },
+    "1610612746": {
+        "abbreviation": "LAC",
+        "teamName": "Los Angeles Clippers",
+        "stats": [
+            22.0,
+            0.0,
+            2.0,
+            1.0,
+            10.0,
+            -12.0,
+            -1.0,
+            -16.0,
+            3.0,
+            7.0,
+            1.0,
+            2.0,
+            -3.0,
+            5.0,
+            0.622
+        ],
+        "logo": "",
+        "gamesPlayed": 2
+    },
+    "1610612747": {
+        "abbreviation": "LAL",
+        "teamName": "Los Angeles Lakers",
+        "stats": [
+            6.0,
+            -8.0,
+            2.0,
+            2.0,
+            -2.0,
+            3.0,
+            4.0,
+            10.0,
+            6.0,
+            10.0,
+            -3.0,
+            -2.0,
+            -6.0,
+            -9.0,
+            0.573
+        ],
+        "logo": "",
+        "gamesPlayed": 2
+    },
+    "1610612763": {
+        "abbreviation": "MEM",
+        "teamName": "Memphis Grizzlies",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.329
+        ],
+        "logo": "",
+        "gamesPlayed": 0
+    },
+    "1610612748": {
+        "abbreviation": "MIA",
+        "teamName": "Miami Heat",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.561
+        ],
+        "logo": "",
+        "gamesPlayed": 0
+    },
+    "1610612749": {
+        "abbreviation": "MIL",
+        "teamName": "Milwaukee Bucks",
+        "stats": [
+            -25.0,
+            5.0,
+            -1.0,
+            4.0,
+            -5.0,
+            14.0,
+            3.0,
+            7.0,
+            -18.0,
+            -20.0,
+            -5.0,
+            0.0,
+            -2.0,
+            10.0,
+            0.598
+        ],
+        "logo": "",
+        "gamesPlayed": 2
+    },
+    "1610612750": {
+        "abbreviation": "MIN",
+        "teamName": "Minnesota Timberwolves",
+        "stats": [
+            -6.0,
+            -5.0,
+            2.0,
+            -2.0,
+            7.0,
+            22.0,
+            -2.0,
+            9.0,
+            -18.0,
+            -19.0,
+            -3.0,
+            2.0,
+            1.0,
+            9.0,
+            0.683
+        ],
+        "logo": "",
+        "gamesPlayed": 2
+    },
+    "1610612740": {
+        "abbreviation": "NOP",
+        "teamName": "New Orleans Pelicans",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.598
+        ],
+        "logo": "",
+        "gamesPlayed": 0
+    },
+    "1610612752": {
+        "abbreviation": "NYK",
+        "teamName": "New York Knicks",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.61
+        ],
+        "logo": "",
+        "gamesPlayed": 0
+    },
+    "1610612760": {
+        "abbreviation": "OKC",
+        "teamName": "Oklahoma City Thunder",
+        "stats": [
+            5.0,
+            2.0,
+            -2.0,
+            4.0,
+            -3.0,
+            -19.0,
+            -2.0,
+            -17.0,
+            13.0,
+            20.0,
+            3.0,
+            3.0,
+            -1.0,
+            -10.0,
+            0.695
+        ],
+        "logo": "",
+        "gamesPlayed": 2
+    },
+    "1610612753": {
+        "abbreviation": "ORL",
+        "teamName": "Orlando Magic",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.573
+        ],
+        "logo": "",
+        "gamesPlayed": 0
+    },
+    "1610612755": {
+        "abbreviation": "PHI",
+        "teamName": "Philadelphia 76ers",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.573
+        ],
+        "logo": "",
+        "gamesPlayed": 0
+    },
+    "1610612756": {
+        "abbreviation": "PHX",
+        "teamName": "Phoenix Suns",
+        "stats": [
+            -6.0,
+            8.0,
+            -2.0,
+            -2.0,
+            2.0,
+            -3.0,
+            -4.0,
+            -10.0,
+            -6.0,
+            -10.0,
+            3.0,
+            2.0,
+            6.0,
+            9.0,
+            0.598
+        ],
+        "logo": "",
+        "gamesPlayed": 2
+    },
+    "1610612757": {
+        "abbreviation": "POR",
+        "teamName": "Portland Trail Blazers",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.256
+        ],
+        "logo": "",
+        "gamesPlayed": 0
+    },
+    "1610612758": {
+        "abbreviation": "SAC",
+        "teamName": "Sacramento Kings",
+        "stats": [
+            -22.0,
+            0.0,
+            -2.0,
+            -1.0,
+            -10.0,
+            12.0,
+            1.0,
+            16.0,
+            -3.0,
+            -7.0,
+            -1.0,
+            -2.0,
+            3.0,
+            -5.0,
+            0.561
+        ],
+        "logo": "",
+        "gamesPlayed": 2
+    },
+    "1610612759": {
+        "abbreviation": "SAS",
+        "teamName": "San Antonio Spurs",
+        "stats": [
+            -22.0,
+            7.0,
+            -2.0,
+            -7.0,
+            -7.0,
+            3.0,
+            -6.0,
+            -9.0,
+            -2.0,
+            -6.0,
+            -5.0,
+            1.0,
+            -5.0,
+            1.0,
+            0.268
+        ],
+        "logo": "",
+        "gamesPlayed": 2
+    },
+    "1610612761": {
+        "abbreviation": "TOR",
+        "teamName": "Toronto Raptors",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.5
+        ],
+        "logo": "",
+        "gamesPlayed": 0
+    },
+    "1610612762": {
+        "abbreviation": "UTA",
+        "teamName": "Utah Jazz",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.378
+        ],
+        "logo": "",
+        "gamesPlayed": 0
+    },
+    "1610612764": {
+        "abbreviation": "WAS",
+        "teamName": "Washington Wizards",
+        "stats": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.183
+        ],
+        "logo": "",
+        "gamesPlayed": 0
+    }
 }
