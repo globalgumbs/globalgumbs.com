@@ -1,68 +1,49 @@
 version: 1
-applications:
-  - backend:
-      phases:
-        preBuild:
-          - name: Install Python 3.12.7
-            uses: actions/setup-python@v5
-            with:
-              python-version: 3.12.7
-              cache: 'pip'
 
-          - name: Install dependencies
-            run: pip install -r scripts/requirements.txt
+frontend:
+  phases:
+    preBuild:
+      - name: Install Python 3.12.7
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12.7
+          cache: 'pip'
 
-          - name: Download artifacts folder
-            uses: actions/download-artifact@v4
-            with:
-              name: artifact
-              path: artifacts/**
-          
-          - name: Run evaluation script
-            run: python3 scripts/evaluate.py
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
 
-          - name: Make predictions for today's games
-            run: python3 scripts/update.py
-
-          - name: Upload artifacts folder
-            uses: actions/upload-artifact@v4
-            with:
-              name: artifacts
-              path: artifacts/**
-        
-        build:
-          commands:
-            - echo "Building backend..."
-
-        artifacts:
-          baseDirectory: /artifacts
-          files:
-            - '**/*'
-        
-        cache:
-          paths:
-            - '.venv/**/*'
-            - 'requirements.txt'
-    
-  - frontend:
-      phases:
-        preBuild:
-          commands:
-            - nvm install 18
-            - npm install
-        
-        build:
-          commands:
-            - echo "Building frontend..."
-            - npm run build
-
-      artifacts:
-        baseDirectory: build
-        files:
-          - '**/*'
+      - name: Download artifacts folder
+        uses: actions/download-artifact@v4
+        with:
+          name: artifact
+          path: artifacts/**
       
-      cache:
-        paths:
-          - node_modules/**/*
-          - '.venv/**/*'
-          - 'requirements.txt'
+      - name: Run evaluation script
+        run: python3 scripts/evaluate.py
+
+      - name: Make predictions for today's games
+        run: python3 scripts/update.py
+
+      - name: Upload artifacts folder
+        uses: actions/upload-artifact@v4
+        with:
+          name: artifacts
+          path: artifacts/**
+    
+    build:
+      commands:
+        - nvm install 18
+        - npm install
+        - npm run build
+        - echo "Building hoops app..."
+
+    artifacts:
+      baseDirectory: /artifacts
+      files:
+        - '**/*'
+    
+    cache:
+      paths:
+        - '.venv/**/*'
+        - 'node_modules/**/*'
+        - 'requirements.txt'
