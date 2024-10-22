@@ -1,1 +1,35 @@
-
+on:
+  workflow_dispatch:
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Install Python 3.12.7
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12.7
+          cache: 'pip'
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+      - name: Download artifacts folder
+        uses: actions/download-artifact@v4
+        with:
+          name: artifacts
+          path: ./artifacts/**
+      - name: Run evaluation script
+        run: python3 scripts/evaluate.py
+      - name: Make predictions for todays games
+        run: python3 scripts/update.py
+      - name: Upload artifacts folder
+        uses: actions/upload-artifact@v4
+        with:
+          name: artifacts
+          path: ./artifacts/**
+      - name: Git Push
+        run: |
+          git config --global user.name globalgumbs
+          git config --global user.email albertgumbs38@gmail.com
+          git commit -am "daily refresh"
+          git push
