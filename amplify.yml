@@ -3,33 +3,33 @@ applications:
   - backend:
       phases:
         preBuild:
-
           - name: Install Python 3.12.7
-          uses: actions/setup-python@v5
-          with:
-            python-version: 3.12.7
-            cache: 'pip'
+            uses: actions/setup-python@v5
+            with:
+              python-version: 3.12.7
+              cache: 'pip'
 
-          -name: Install dependencies
-          run: pip install -r requirements.txt
+          - name: Install dependencies
+            run: pip install -r scripts/requirements.txt
 
           - name: Download artifacts folder
-          uses: actions/download-artifact@v4
-          with:
-            name: artifact
-            path: artifacts/**
+            uses: actions/download-artifact@v4
+            with:
+              name: artifact
+              path: artifacts/**
           
           - name: Run evaluation script
-          run: python3 scripts/evaluate.py
+            run: python3 scripts/evaluate.py
 
           - name: Make predictions for today's games
-          run: python3 scripts/update.py
+            run: python3 scripts/update.py
 
-          -name: Upload artifacts folder
-          uses: actions/upload-artifact@v4
-          with:
-            name: artifacts
-            path: artifacts/**
+          - name: Upload artifacts folder
+            uses: actions/upload-artifact@v4
+            with:
+              name: artifacts
+              path: artifacts/**
+        
         build:
           commands:
             - echo "Building backend..."
@@ -38,6 +38,7 @@ applications:
           baseDirectory: /artifacts
           files:
             - '**/*'
+        
         cache:
           paths:
             - '.venv/**/*'
@@ -49,17 +50,19 @@ applications:
           commands:
             - nvm install 18
             - npm install
+        
         build:
           commands:
             - echo "Building frontend..."
             - npm run build
+
       artifacts:
         baseDirectory: build
         files:
           - '**/*'
+      
       cache:
         paths:
           - node_modules/**/*
           - '.venv/**/*'
           - 'requirements.txt'
-
