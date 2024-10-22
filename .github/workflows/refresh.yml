@@ -18,7 +18,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: artifacts
-          path: ./artifacts/**
+          path: /artifacts/**
       - name: Run evaluation script
         run: python3 scripts/evaluate.py
       - name: Make predictions for todays games
@@ -27,7 +27,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: artifacts
-          path: ./artifacts/**
+          path: /artifacts/**
       - name: Git Push
         run: |
           git config --global user.name globalgumbs
