@@ -30,11 +30,11 @@ jobs:
           name: artifacts
           path: ./artifacts/
       - name: Git Push
-        - uses: oleksiyrudenko/gha-git-credentials@v2-latest
-          with:
-            global: true
-            actor: 'AG GitHub Actions'
-            token: '${{ secrets.GITHUB_TOKEN }}'
-        - run: |
-            git commit -am "daily refresh"
-            git push
+        uses: oleksiyrudenko/gha-git-credentials@v2-latest
+        with:
+          global: true
+          actor: 'AG GitHub Actions'
+          token: '${{ secrets.GITHUB_TOKEN }}'
+        run: |
+          git commit -am "daily refresh"
+          git push
