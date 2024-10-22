@@ -29,12 +29,13 @@ jobs:
         with:
           name: artifacts
           path: ./artifacts/
-      - name: Git Push
+      - name: Configure GitHub credentials
         uses: oleksiyrudenko/gha-git-credentials@v2-latest
         with:
           global: true
           actor: 'AG GitHub Actions'
           token: '${{ secrets.GITHUB_TOKEN }}'
+      - name: Commit and push changes
         run: |
           git commit -am "daily refresh"
           git push
