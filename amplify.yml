@@ -37,13 +37,13 @@ frontend:
         - npm run build
         - echo "Building hoops app..."
 
-    artifacts:
-      baseDirectory: /artifacts
-      files:
-        - '**/*'
+  artifacts:
+    baseDirectory: /artifacts
+    files:
+      - '**/*'
     
-    cache:
-      paths:
-        - '.venv/**/*'
-        - 'node_modules/**/*'
-        - 'requirements.txt'
+  cache:
+    paths:
+      - '.venv/**/*'
+      - 'node_modules/**/*'
+      - 'requirements.txt'
