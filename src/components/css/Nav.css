@@ -1,0 +1,43 @@
+/* Nav.css */
+
+.gg {
+    text-align: left;
+    float: left;
+    padding: 0 0 0 5vw;
+    font-size: 45px;
+    font-weight: 800;
+    width: 5vw;
+  }
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    margin: 0 30vw;
+    justify-content: space-between;
+    padding-inline: 0;
+}   
+
+.nav-list-item {
+    display: block;
+}
+
+a {
+    display: block;
+    width: 10vw;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.nav-container nav ul li a:hover {
+    background-color: #8b8b8b;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-container nav ul li a.active {
+    background-color: #4CAF50;
+    color: white;
+}

@@ -1,0 +1,38 @@
+.game {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 25vh;
+}
+
+.team-container {
+  display: flex;
+  align-items: center;
+}
+
+.team-logo {
+  width: 15vh;
+  height: 15vh;
+  margin: 0 3vw;
+}
+
+.team-info {
+  text-align: center;
+  margin: 0 2vw
+}
+
+.team {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.percentage {
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+.vs {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
