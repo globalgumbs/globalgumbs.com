@@ -6,7 +6,7 @@ class Model1:
     """ Model 1: Multi-Layer Perceptron ---------- Predicted Winner: 0 - Home Team | 1 - Away Team"""
 
     def __init__(self):
-        model_path = "./artifacts/model1.pkl"
+        model_path = "./scripts/model1.pkl"
         with open(model_path, 'rb') as f:
             self.model = pickle.load(f)
     
