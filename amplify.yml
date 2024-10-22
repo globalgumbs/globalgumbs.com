@@ -3,55 +3,46 @@ applications:
   - backend:
       phases:
         preBuild:
+
           - name: Install Python 3.12.7
-            uses: actions/setup-python@v5
-            with:
-              python-version: 3.12.7
-              cache: 'pip'
+          uses: actions/setup-python@v5
+          with:
+            python-version: 3.12.7
+            cache: 'pip'
 
-          - name: Install dependencies
-            run: pip install -r requirements.txt
+          -name: Install dependencies
+          run: pip install -r requirements.txt
 
-          - name: Download game log table
-            uses: actions/download-artifact@v4
-            with:
-              name: log.csv
-              path: artifacts/log.csv
-
+          - name: Download artifacts folder
+          uses: actions/download-artifact@v4
+          with:
+            name: artifact
+            path: artifacts/**
+          
           - name: Run evaluation script
-            run: python3 scripts/evaluate.py
+          run: python3 scripts/evaluate.py
 
           - name: Make predictions for today's games
-            run: python3 scripts/update.py
+          run: python3 scripts/update.py
 
-          - name: Download today's game data
-            uses: actions/download-artifact@v4
-            with:
-              name: today.json
-              path: src/today.json
-
+          -name: Upload artifacts folder
+          uses: actions/upload-artifact@v4
+          with:
+            name: artifacts
+            path: artifacts/**
         build:
           commands:
-            # Add any build commands for your backend if needed
             - echo "Building backend..."
 
-      artifacts:
-        baseDirectory: /artifacts  # Ensure this points to the correct output path
-        files:
-          - '**/*'  # Upload all files in the artifacts directory
-
-      cache:
-        paths:
-          - '.venv/**/*'
-          - 'requirements.txt'
-
-      # Upload the entire artifacts directory
-      - name: Upload updated artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: artifacts
-          path: artifacts/**  # This uploads everything in the artifacts directory
-
+        artifacts:
+          baseDirectory: /artifacts
+          files:
+            - '**/*'
+        cache:
+          paths:
+            - '.venv/**/*'
+            - 'requirements.txt'
+    
   - frontend:
       phases:
         preBuild:
@@ -60,12 +51,15 @@ applications:
             - npm install
         build:
           commands:
+            - echo "Building frontend..."
             - npm run build
-
       artifacts:
-        baseDirectory: build  # Update this if your build output goes elsewhere
+        baseDirectory: build
         files:
           - '**/*'
       cache:
         paths:
           - node_modules/**/*
+          - '.venv/**/*'
+          - 'requirements.txt'
+
