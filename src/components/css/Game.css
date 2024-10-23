@@ -1,19 +1,30 @@
-.game {
+.Game {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.game-container {
+  text-align: center;
   display: flex;
   justify-content: center;
   gap: 20px;
   height: 25vh;
+  border-bottom: 1px solid #333;
+  width: 80vw;
 }
 
 .team-container {
   display: flex;
   align-items: center;
+  display: inline-block;
 }
 
 .team-logo {
   width: 15vh;
   height: 15vh;
   margin: 0 3vw;
+  display: inline-block;
 }
 
 .team-info {
@@ -23,7 +34,7 @@
 
 .team {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .percentage {
@@ -32,7 +43,8 @@
 }
 
 .vs {
+  display: inline-block;
   text-align: center;
   font-size: 35px;
-  font-weight: bold;
+  width: 10vw
 }
