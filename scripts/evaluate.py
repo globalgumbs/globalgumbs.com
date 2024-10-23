@@ -58,10 +58,9 @@ def eval_preds(results: Optional[dict[str, dict[str, int]]]) -> Optional[pd.Data
         print("No games on ", date)
         return None
     with open(LOG_PATH, "r") as f:
-        log = pd.read_csv(f)
+        log = pd.read_csv(f, dtype={"game_id":str})
     df = pd.DataFrame(data=[], columns=["game_id", "home_team_id", "away_team_id", "prediction", "winner", "date"])
     for game_id in list(results[date].keys()):
-
         df.loc[len(df)] = [
             game_id,
             games[game_id]["home_team_id"],
@@ -72,7 +71,7 @@ def eval_preds(results: Optional[dict[str, dict[str, int]]]) -> Optional[pd.Data
         ]
     log = pd.concat([log, df], ignore_index=True)
     log.to_csv(LOG_PATH, index=False)
-    log.to_csv(f"./artifacts/log{str(date.replace("/", ""))}.csv", index=False)
+    log.to_csv(f"./artifacts/log_{str(date.replace("/", "-"))}.csv", index=False)
     print(log)
     return df
 
@@ -168,6 +167,7 @@ def update_stats_table(df: Optional[pd.DataFrame]) -> bool:
         json.dump(teams, f, indent=4)
     print("Updated stats for:", updated)
     return True
+
 def create_df(): # Run this once to create the log.csv file
     df = pd.DataFrame(data=[], columns=["game_id", "home_team_id", "away_team_id", "prediction", "winner", "date"])
     df.to_csv(LOG_PATH, index=False)
