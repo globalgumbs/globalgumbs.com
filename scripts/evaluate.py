@@ -71,7 +71,7 @@ def eval_preds(results: Optional[dict[str, dict[str, int]]]) -> Optional[pd.Data
         ]
     log = pd.concat([log, df], ignore_index=True)
     log.to_csv(LOG_PATH, index=False)
-    log.to_csv(f"./artifacts/log_{str(date.replace("/", "-"))}.csv", index=False)
+#    log.to_csv(f"./artifacts/log_{str(date.replace("/", "-"))}.csv", index=False)
     print(log)
     return df
 

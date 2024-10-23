@@ -24,17 +24,10 @@ jobs:
         run: python3 scripts/evaluate.py
       - name: Make predictions for todays games
         run: python3 scripts/update.py
-      - name: Download artifacts folder
-        uses: actions/download-artifact@v4
-        with:
-          name: artifacts
-          path: ./artifacts/
       - name: Ensure artifacts folder is writable and not ignored
         run: |
-          chmod -R 755 artifacts/log.csv
-          chmod -R 755 artifacts/teams.json
-          git add artifacts/log.csv
-          git add artifacts/teams.json
+          chmod -R 755 artifacts/
+          git add artifacts/
       - uses: oleksiyrudenko/gha-git-credentials@v2-latest
         with:
           global: true
@@ -43,3 +36,8 @@ jobs:
       - run: |
           git commit -am "daily refresh"
           git push
+      - name: Download artifacts folder
+        uses: actions/download-artifact@v4
+        with:
+          name: artifacts
+          path: ./artifacts/
