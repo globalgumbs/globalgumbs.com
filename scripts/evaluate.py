@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 
 LOG_PATH = "./artifacts/log.csv"
-TODAY_PATH = "./artifacts/today.json"
+TODAY_PATH = "./src/today.json"
 TEAMS_PATH = "./artifacts/teams.json"
 
 def get_results(date: str) -> Optional[dict[str, dict[str, int]]]:
