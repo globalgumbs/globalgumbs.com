@@ -29,6 +29,10 @@ jobs:
         with:
           name: artifacts
           path: ./artifacts/
+      - name: Ensure artifacts folder is writable and not ignored
+        run: |
+          chmod -R 755 artifacts/
+          git add artifacts/
       - uses: oleksiyrudenko/gha-git-credentials@v2-latest
         with:
           global: true
