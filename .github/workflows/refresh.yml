@@ -1,8 +1,7 @@
 on:
   workflow_dispatch:
   schedule:
-    # - cron: "0 13 * * *" 
-    - cron: "50 * * * *"
+    - cron: "0 16 * * *" 
 jobs:
   refresh:
     runs-on: ubuntu-latest
