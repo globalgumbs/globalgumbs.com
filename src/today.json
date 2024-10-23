@@ -1,1 +1,20 @@
-{}
+{
+    "0022400061": {
+        "home_team_id": "1610612738",
+        "home_team_name": "Boston Celtics",
+        "away_team_id": "1610612752",
+        "away_team_name": "New York Knicks",
+        "prediction": 0.34,
+        "home_team_logo": "",
+        "away_team_logo": ""
+    },
+    "0022400062": {
+        "home_team_id": "1610612747",
+        "home_team_name": "Los Angeles Lakers",
+        "away_team_id": "1610612750",
+        "away_team_name": "Minnesota Timberwolves",
+        "prediction": 0.49,
+        "home_team_logo": "",
+        "away_team_logo": ""
+    }
+}
