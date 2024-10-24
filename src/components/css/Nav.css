@@ -1,8 +1,12 @@
 /* Nav.css */
+.nav-container {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+}
 
 .gg {
     text-align: left;
-    float: left;
     padding: 0 0 0 5vw;
     font-size: 45px;
     font-weight: 800;
@@ -13,13 +17,13 @@
     list-style-type: none;
     display: flex;
     text-align: center;
-    margin: 0 30vw;
+    margin: 0 10vw 0 0;
     justify-content: space-between;
     padding-inline: 0;
 }   
 
 .nav-list-item {
-    display: block;
+    width: fit-content;
 }
 
 a {
@@ -28,16 +32,5 @@ a {
     color: black;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 22px;
-}
-
-.nav-container nav ul li a:hover {
-    background-color: #8b8b8b;
-    font-weight: bold;
-    color: black;
-}
-
-.nav-container nav ul li a.active {
-    background-color: #4CAF50;
-    color: white;
+    font-size: 16px;
 }

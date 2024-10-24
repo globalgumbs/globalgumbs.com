@@ -4,7 +4,14 @@ import './css/Predictions.css';
 import Game from './Game';
 import data from '../today.json';
 
+function getDate() {
+  const today = new Date();
+  return today.toDateString();
+}
+
 function Predictions() {
+
+  const [date, setCurrDate] = useState([getDate()]);
   const [games, setGames] = useState([]);
 
   useEffect(() => {
@@ -23,8 +30,8 @@ function Predictions() {
   }
 
   return (
-    <div className="App">
-      <h1 className='pred-header'>Games</h1>
+    <div className="Predictions">
+      <h1 className='pred-header'>{date}</h1>
       {games.map((game, index) => (
         <Game
           key={index}

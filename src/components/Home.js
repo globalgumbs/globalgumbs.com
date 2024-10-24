@@ -1,6 +1,5 @@
 import React from 'react';
 import './css/Home.css';
-import './css/Home-Mobile.css';
 import gh from './assets/Github.png';
 import ig from './assets/Instagram.png';
 import li from './assets/LinkedIn.png';

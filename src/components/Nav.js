@@ -1,12 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Home from './Home';
 import './css/Nav.css';
 
 const Nav = () => {
     return (
-        <div className="nav-container">
-            <nav>
+        <div className="Nav">
+            <nav className="nav-container">
                 <div className="gg">GG.</div>
                 <ul className="nav-list">
                     <li className="nav-list-item">

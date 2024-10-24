@@ -9,7 +9,7 @@ import Projects from './components/Projects'
 
 function App() {
   return (
-    <Router>
+    <Router className="App">
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
