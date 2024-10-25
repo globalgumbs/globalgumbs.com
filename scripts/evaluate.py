@@ -8,7 +8,7 @@ import numpy as np
 
 LOG_PATH = "./artifacts/log.csv"
 TODAY_PATH = "./src/today.json"
-TEAMS_PATH = "./artifacts/teams.json"
+with open("./artifacts/teams.json") as f: teams =json.load(f)
 
 def get_results(date: str) -> Optional[dict[str, dict[str, int]]]:
     """ Date: str in form '10/17/2024' ------------- Returns {game_id: winner (0 for home | 1 for away)} for all games played on the input date """
@@ -59,13 +59,15 @@ def eval_preds(results: Optional[dict[str, dict[str, int]]]) -> Optional[pd.Data
         return None
     with open(LOG_PATH, "r") as f:
         log = pd.read_csv(f, dtype={"game_id":str})
-    df = pd.DataFrame(data=[], columns=["game_id", "home_team_id", "away_team_id", "prediction", "winner", "date"])
+    df = pd.DataFrame(data=[], columns=["game_id", "home_team_id", "home_team_name", "away_team_id", "away_team_name", "prediction", "winner", "date"])
     for game_id in list(results[date].keys()):
         df.loc[len(df)] = [
             game_id,
             games[game_id]["home_team_id"],
-            games[game_id]["away_team_id"], 
-            int(games[game_id]["prediction"]), 
+            teams[games[game_id]["home_team_id"]]["teamName"],
+            games[game_id]["away_team_id"],
+            teams[games[game_id]["away_team_id"]]["teamName"],
+            games[game_id]["prediction"],
             results[date][game_id],
             datetime.strptime(date, '%m/%d/%Y').strftime('%m-%d-%Y')
         ]
@@ -135,8 +137,6 @@ def update_stats_table(df: Optional[pd.DataFrame]) -> bool:
     if df is None:
         print("No data to update")
         return False
-    with open(TEAMS_PATH, "r") as f:
-        teams = json.load(f)
     updated = []
     for i, row in df.iterrows():
         try:
@@ -163,13 +163,13 @@ def update_stats_table(df: Optional[pd.DataFrame]) -> bool:
         except Exception as e:
             print("Failed to update stats for game:", game_id)
             print(e.with_traceback)
-    with open(TEAMS_PATH, "w") as f:
+    with open("./artifacts/teams", "w") as f:
         json.dump(teams, f, indent=4)
     print("Updated stats for:", updated)
     return True
 
 def create_df(): # Run this once to create the log.csv file
-    df = pd.DataFrame(data=[], columns=["game_id", "home_team_id", "away_team_id", "prediction", "winner", "date"])
+    df = pd.DataFrame(data=[], columns=["game_id", "home_team_id", "home_team_name", "away_team_id", "away_team_name", "prediction", "winner", "date"])
     df.to_csv(LOG_PATH, index=False)
 
 if __name__ == "__main__":

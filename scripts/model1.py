@@ -20,5 +20,4 @@ class Model1:
             if col not in COLS:
                 del(X_test[col])
         y: list[Tuple[float, float]] = self.model.predict_proba(X_test.values)
-#        print(y)
         return y
