@@ -11,3 +11,7 @@ game_id,home_team_id,home_team_name,away_team_id,away_team_name,prediction,winne
 0022400070,1610612762,Utah Jazz,1610612763,Memphis Grizzlies,0.4,1,10-23-2024
 0022400072,1610612757,Portland Trail Blazers,1610612744,Golden State Warriors,0.59,1,10-23-2024
 0022400071,1610612746,Los Angeles Clippers,1610612756,Phoenix Suns,0.42,1,10-23-2024
+0022400073,1610612764,Washington Wizards,1610612738,Boston Celtics,0.73,1,10-24-2024
+0022400074,1610612742,Dallas Mavericks,1610612759,San Antonio Spurs,0.27,0,10-24-2024
+0022400076,1610612758,Sacramento Kings,1610612750,Minnesota Timberwolves,0.49,1,10-24-2024
+0022400075,1610612743,Denver Nuggets,1610612760,Oklahoma City Thunder,0.43,1,10-24-2024
