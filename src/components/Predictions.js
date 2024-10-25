@@ -11,7 +11,7 @@ function getDate() {
 
 function Predictions() {
 
-  const [date, setCurrDate] = useState([getDate()]);
+  const date = useState([getDate()]);
   const [games, setGames] = useState([]);
 
   useEffect(() => {
@@ -21,7 +21,6 @@ function Predictions() {
   }, []);
 
   if (Object.keys(data).length === 0) {
-    console.log('No games today');
     return (
       <div>
         <h1 className='pred-header'>No games today</h1>

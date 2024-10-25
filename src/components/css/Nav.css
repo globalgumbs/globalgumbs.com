@@ -3,6 +3,7 @@
     display: flex;
     width: 100vw;
     justify-content: space-between;
+    text-align: center;
 }
 
 .gg {
@@ -11,26 +12,28 @@
     font-size: 45px;
     font-weight: 800;
     width: 5vw;
+    vertical-align: middle;
   }
 
 .nav-list {
     list-style-type: none;
     display: flex;
     text-align: center;
-    margin: 0 10vw 0 0;
+    margin: 0 15vw 0 0;
     justify-content: space-between;
     padding-inline: 0;
+    
 }   
 
 .nav-list-item {
     width: fit-content;
+    padding: 2vh 2vw 2vh 7vw;
 }
 
 a {
     display: block;
     width: 10vw;
     color: black;
-    padding: 14px 16px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
 }

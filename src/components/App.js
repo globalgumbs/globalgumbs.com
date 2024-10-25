@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './components/css/App.css';
-import Home from './components/Home'
-import Nav from './components/Nav'
-import Predictions from './components/Predictions'
-import Projects from './components/Projects'
+import './css/App.css';
+import Home from './Home'
+import Nav from './Nav'
+import Predictions from './Predictions'
 
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} /> 
         <Route path="/predictions" element={<Predictions />} />
       </Routes>
     </Router>

@@ -1,7 +1,7 @@
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 16 * * *" 
+    - cron: "30 16 * * *" 
 jobs:
   refresh:
     runs-on: ubuntu-latest

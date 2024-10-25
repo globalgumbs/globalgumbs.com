@@ -3,6 +3,7 @@ import './css/Home.css';
 import gh from './assets/Github.png';
 import ig from './assets/Instagram.png';
 import li from './assets/LinkedIn.png';
+import Projects from './Projects';
 
 function Home() {
     return (
@@ -31,6 +32,8 @@ function Home() {
                     <img className="social" src={gh} alt="Github" />
                 </a>
             </div>
+
+            <Projects />
         </div>          
     );
 }
