@@ -4,7 +4,7 @@
         "home_team_name": "Washington Wizards",
         "away_team_id": "1610612738",
         "away_team_name": "Boston Celtics",
-        "prediction": 0.96,
+        "prediction": 0.73,
         "home_team_logo": "https://cdn.nba.com/logos/nba/1610612764/primary/L/logo.svg",
         "away_team_logo": "https://cdn.nba.com/logos/nba/1610612738/primary/L/logo.svg"
     },
@@ -31,7 +31,7 @@
         "home_team_name": "Sacramento Kings",
         "away_team_id": "1610612750",
         "away_team_name": "Minnesota Timberwolves",
-        "prediction": 0.39,
+        "prediction": 0.49,
         "home_team_logo": "https://cdn.nba.com/logos/nba/1610612758/primary/L/logo.svg",
         "away_team_logo": "https://cdn.nba.com/logos/nba/1610612750/primary/L/logo.svg"
     }

@@ -19,7 +19,10 @@ def get_teams_stats(games: list[Game]):
     for i, game in enumerate(games):
         h = TEAMS[str(game.home_team_id)]["stats"]
         a = TEAMS[str(game.away_team_id)]["stats"]
-        X.loc[i] = np.subtract(h, a)
+        if h[0] == 0 or a[0] == 0:
+            X.loc[i] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, h[-1] - a[-1]]
+        else:
+            X.loc[i] = np.subtract(h, a)
     print(X)
     return X
 
