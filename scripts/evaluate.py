@@ -8,7 +8,7 @@ import numpy as np
 
 LOG_PATH = "./artifacts/log.csv"
 TODAY_PATH = "./src/today.json"
-with open("./artifacts/teams.json") as f: teams =json.load(f)
+with open("./artifacts/teams.json", "r") as f: teams =json.load(f)
 
 def get_results(date: str) -> Optional[dict[str, dict[str, int]]]:
     """ Date: str in form '10/17/2024' ------------- Returns {game_id: winner (0 for home | 1 for away)} for all games played on the input date """
@@ -61,20 +61,24 @@ def eval_preds(results: Optional[dict[str, dict[str, int]]]) -> Optional[pd.Data
         log = pd.read_csv(f, dtype={"game_id":str})
     df = pd.DataFrame(data=[], columns=["game_id", "home_team_id", "home_team_name", "away_team_id", "away_team_name", "prediction", "winner", "date"])
     for game_id in list(results[date].keys()):
-        df.loc[len(df)] = [
-            game_id,
-            games[game_id]["home_team_id"],
-            teams[games[game_id]["home_team_id"]]["teamName"],
-            games[game_id]["away_team_id"],
-            teams[games[game_id]["away_team_id"]]["teamName"],
-            games[game_id]["prediction"],
-            results[date][game_id],
-            datetime.strptime(date, '%m/%d/%Y').strftime('%m-%d-%Y')
-        ]
+        try: 
+            df.loc[len(df)] = [
+                game_id,
+                games[game_id]["home_team_id"],
+                teams[games[game_id]["home_team_id"]]["teamName"],
+                games[game_id]["away_team_id"],
+                teams[games[game_id]["away_team_id"]]["teamName"],
+                games[game_id]["prediction"],
+                results[date][game_id],
+                datetime.strptime(date, '%m/%d/%Y').strftime('%m-%d-%Y')
+            ]
+        except:
+            print("Game ID not found in today.json")
+            continue
     log = pd.concat([log, df], ignore_index=True)
     log.to_csv(LOG_PATH, index=False)
 #    log.to_csv(f"./artifacts/log_{str(date.replace("/", "-"))}.csv", index=False)
-    print(log)
+    print(df)
     return df
 
 def get_boxscore(game_id: str) -> Optional[dict[str, list]]:
@@ -141,32 +145,45 @@ def update_stats_table(df: Optional[pd.DataFrame]) -> bool:
     for i, row in df.iterrows():
         try:
             game_id = row["game_id"]
-            home_team_id = row["home_team_id"]
-            away_team_id = row["away_team_id"]
-            boxscore = get_boxscore(game_id)
+            home_team_id = str(row["home_team_id"])
+            away_team_id = str(row["away_team_id"])
+            boxscore = get_boxscore(game_id)            
             if not boxscore:
                 return False
-            pm = np.subtract(boxscore[str(home_team_id)], boxscore[str(away_team_id)]).tolist()
+            
+            pm = np.subtract(boxscore[home_team_id], boxscore[away_team_id]).tolist()
             
             for count, team_id in enumerate([home_team_id, away_team_id]):
-                old_stats = teams[str(team_id)]["stats"]
-                n =  teams[str(team_id)]["gamesPlayed"]
+                if team_id not in teams:  # Ensure we only update existing teams
+                    print(f"Team ID {team_id} not found.")
+                    continue
+                
+                old_stats = teams[team_id]["stats"]
+                n = teams[team_id]["gamesPlayed"]
                 new_stats = []
+                
+                # Reverse point margin for the away team
                 if count == 1:
-                    pm = [num * - 1 for num in pm]
+                    pm = [-num for num in pm]
+                    
+                # Update statistics using weighted average
                 for j in range(len(pm)):
                     new_stats.append((old_stats[j] * n + pm[j]) / (n + 1))
+                
                 new_stats.append(old_stats[-1])
-                teams[str(team_id)]["stats"] = new_stats
-                teams[str(team_id)]["gamesPlayed"] += 1
+                
+                teams[team_id]["stats"] = new_stats
+                teams[team_id]["gamesPlayed"] += 1
                 updated.append(teams[team_id]["teamName"])
+                
         except Exception as e:
             print("Failed to update stats for game:", game_id)
-            print(e.with_traceback)
-    with open("./artifacts/teams", "w") as f:
+            print(e)
+    with open("./artifacts/teams.json", "w") as f:  # Ensure the path and file extension
         json.dump(teams, f, indent=4)
     print("Updated stats for:", updated)
     return True
+
 
 def create_df(): # Run this once to create the log.csv file
     df = pd.DataFrame(data=[], columns=["game_id", "home_team_id", "home_team_name", "away_team_id", "away_team_name", "prediction", "winner", "date"])
