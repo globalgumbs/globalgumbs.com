@@ -8,12 +8,14 @@ import Predictions from './Predictions'
 
 function App() {
   return (
-    <Router className="App">
+    <Router>
       <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/predictions" element={<Predictions />} />
-      </Routes>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/predictions" element={<Predictions />} />
+        </Routes>
+      </div>
     </Router>
   );
 }

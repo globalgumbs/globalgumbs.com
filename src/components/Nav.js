@@ -7,7 +7,7 @@ function Nav() {
 
     const linkStyle = (path) => ({
         textDecoration: location.pathname === path ? 'underline' : 'none',
-        color: location.pathname === path ? 'rgb(148, 194, 206)' : 'black',
+        color: location.pathname === path ? 'rgb(129, 167, 177)' : 'black',
     });
 
     return (
@@ -16,10 +16,10 @@ function Nav() {
                 <div className="gg">GG.</div>
                 <ul className="nav-list">
                     <li className="nav-list-item" >
-                        <Link style={linkStyle("/")} to="/">Home</Link>
+                        <Link className="link" style={linkStyle("/")} to="/">Home</Link>
                     </li>
                     <li className="nav-list-item">
-                        <Link style={linkStyle("/predictions")} to="/predictions">Predictions</Link>
+                        <Link className="link" style={linkStyle("/predictions")} to="/predictions">Predictions</Link>
                     </li>
                 </ul>
             </nav>

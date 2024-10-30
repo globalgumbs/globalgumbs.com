@@ -1,4 +1,9 @@
 /* Nav.css */
+.Nav {
+    background: linear-gradient(to bottom, white, #e9e9e9);
+    padding-bottom: 5vh;
+}
+
 .nav-container {
     display: flex;
     width: 100vw;
@@ -30,7 +35,7 @@
     padding: 2vh 2vw 2vh 7vw;
 }
 
-a {
+.link {
     display: block;
     width: 10vw;
     color: black;

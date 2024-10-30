@@ -1,5 +1,4 @@
 .Game {
-  display: flex;
   text-align: center;
   justify-content: center;
   width: 100vw;
@@ -54,8 +53,7 @@
   height: 80px;
 }
 
-.separator {
-  border: black 1px solid;
-  width: 80px;
-  height: 10px;
+.game-divider {
+  width: 40%;
+  margin: 5vh auto;
 }

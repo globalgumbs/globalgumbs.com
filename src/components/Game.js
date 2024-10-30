@@ -24,11 +24,7 @@ function Game({homeTeam, homeLogo, homePercentage, awayTeam, awayLogo, awayPerce
           {/* <img className="team-logo" src={homeLogo} style={{float: 'right'}}/> */}
         </div>
         </div>
-      <div class="bar-container">
-        <div class="bar-home"></div>
-      </div>
-
-      
+      <hr className="game-divider" />
     </div>
   );
 }

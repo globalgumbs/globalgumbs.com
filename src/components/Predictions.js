@@ -6,7 +6,8 @@ import data from '../today.json';
 
 function getDate() {
   const today = new Date();
-  return today.toDateString();
+  const options = { weekday: 'long', month: 'short', day: 'numeric' };
+  return today.toLocaleDateString('en-US', options);
 }
 
 function Predictions() {
@@ -30,7 +31,7 @@ function Predictions() {
 
   return (
     <div className="Predictions">
-      <h1 className='pred-header'>{date}</h1>
+      <h1 className='headline'>{date}</h1>
       {games.map((game, index) => (
         <Game
           key={index}

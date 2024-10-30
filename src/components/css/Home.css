@@ -1,75 +1,59 @@
-.nav {
-    width: var(--navWidth);
-    list-style-type: none;
-    display: flex;
-    margin: 0 auto;
-    padding: 0;
-    padding-top: 3vh;
-    height: var(--navHoverFontSize);
+.Home {
     text-align: center;
+    padding: 0 10vw;
 }
 
-.nav-item {
-    box-sizing: border-box;
-    width: calc(var(--navWidth) / 2);
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: 600;
+.About {
+    min-height: 100vh;
 }
 
-.nav-item:hover {
-    color: white;
-    font-size: var(--navHoverFontSize);
+.blurb {
+    font-size: 20px; 
+    line-height: 27.5px;
 }
 
-.headline {
-    font-size: 48px; 
-    font-weight: 600;
-    padding: var(--xPadding);
-    padding-top: 10vh;
-}
-
-.sub-headline {
-    font-size: 25px; 
-    color: var(--primaryColor);
-    padding: var(--xPadding);
-    padding-top: 3vh;
-    line-height: 35px;
+.divider {
+    width: 60%;
+    margin: 5% auto;
 }
 
 .social-bar {
-    height: var(--socialHoverHeight);
+    display: inline-flex;
+    height: 65px;
 }
-
 .social {
-    height: 3vw;
-    padding: 0 0.5vw;
+    height: 50px;
 }
 
-.social:hover { 
-    height: var(--socialHoverHeight);
+.email {
+    height: 60px;
 }
 
-hr {
-    width: 40vw;
-    margin: 4vw auto;
-    color: var(--primaryColor);
+.email:hover {
+    height: 70px;
 }
 
-h1 {
-    text-align: left;
+.social:hover {
+    height: 60px;
 }
 
-a {
+.socialLink {
     text-decoration: none;
     color: inherit;
+    padding: 0 20px;
+    margin: auto;
+    width: 70px;
 }
 
-.Home {
-    margin: 0;
-    min-height: 100vh;
-    scroll-behavior: smooth;
-    text-align: center;
-    color: var(--primaryColor);
-    font-family: "Lato", sans-serif;
+.arrowLink {
+    display: block;
+}
+
+.arrow {
+    width: 100px;
+    padding-top: 2vh;
+}
+
+.arrow:hover {
+    width: 125px;
 }

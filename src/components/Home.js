@@ -1,38 +1,45 @@
 import React from 'react';
 import './css/Home.css';
-import gh from './assets/Github.png';
-import ig from './assets/Instagram.png';
-import li from './assets/LinkedIn.png';
+import githubIcon from './assets/Github.png';
+import emailIcon from './assets/Email.svg';
+import linkedinIcon from './assets/LinkedIn.png';
+import downArrow from './assets/down.png';
 import Projects from './Projects';
 
 function Home() {
     return (
         <div className="Home">
-            <div className="headline">
-                Albert K. Gumbs
-            </div>
+            <div className="About">
+                <div className="headline">
+                    Albert K. Gumbs
+                </div>
 
-            <div className="sub-headline">
-                <br />Hi! Welcome to my site. I'm currently working as a Systems Engineer supporting an evolutionary Navy
-                Electro-Optic / Infrared (EO/IR) sensor system acquisition program.
-                I graduated from UMBC with a BS in Mechanical Engineering in 2023.
-                My professional interests are in the intersection of mechanical and software engineering.
-            </div>
+                <div className="blurb">
+                    <br />
+                    Welcome to my site. I'm currently working as a Systems Engineer supporting an evolutionary Navy
+                    Electro-Optic / Infrared (EO/IR) sensor system acquisition program.
+                    I graduated from UMBC with a Bachelor of Science in Mechanical Engineering in 2023, 
+                    and I will be beginning the Online Masters in Computer Science program at Georgia Tech in January 2025.
+                    My professional interests are in robotics and other applications of algorithms to real world problems.
+                </div>
+                    
+                <hr className="divider" />
 
-            <hr />
-
-            <div className="social-bar">
-                <a href="https://www.linkedin.com/in/albertgumbs" target="_blank">
-                    <img className="social" src={li} alt="LinkedIn" />
+                <div className="social-bar">
+                    <a className="socialLink" href="https://www.linkedin.com/in/albertgumbs" target="_blank" rel="noreferrer">
+                        <img className="social" src={linkedinIcon} alt="LinkedIn" />
+                    </a>
+                    <a className="socialLink" href="mailto:albertgumbs38@gmail.com" target="_blank" rel="noreferrer">
+                        <img className="email" src={emailIcon} alt="Email"/>
+                    </a>
+                    <a className="socialLink" href="https://www.github.com/globalgumbs" target="_blank" rel="noreferrer">
+                        <img className="social" src={githubIcon} alt="Github" />
+                    </a>
+                </div>
+                <a href="#projects" className="arrowLink">
+                    <img className="arrow" src={downArrow} alt="arrow" />
                 </a>
-                <a href="https://www.instagram.com/globalgumbs" target="_blank">
-                    <img className="social" src={ig} alt="Instagram" />
-                </a>
-                <a href="https://www.github.com/globalgumbs" target="_blank">
-                    <img className="social" src={gh} alt="Github" />
-                </a>
             </div>
-
             <Projects />
         </div>          
     );
