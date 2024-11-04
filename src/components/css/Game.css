@@ -1,7 +1,7 @@
 .Game {
   text-align: center;
   justify-content: center;
-  width: 100vw;
+  max-width: 1000px;
 }
 
 .game-container {
@@ -13,14 +13,8 @@
 }
 
 .team-container {
-  padding-top: 20px;
+  padding-top: 10px;
   width: 40vw;
-}
-
-.team-logo {
-  width: 75px;
-  margin: 0 3vw;
-  display: inline-block;
 }
 
 .team-info {
@@ -32,9 +26,8 @@
   align-items: center;
   display: grid;
   font-size: 20px;
-  font-weight: 350;
+  font-weight: 450;
   height: 80px;
-  padding-bottom: 10px;
 }
 
 .percentage {
@@ -54,6 +47,6 @@
 }
 
 .game-divider {
-  width: 40%;
-  margin: 5vh auto;
+  width: 60%;
+  margin: 2.55vh auto;
 }

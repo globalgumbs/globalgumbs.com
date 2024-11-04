@@ -19,7 +19,7 @@ function Home() {
                     Welcome to my site. I'm currently working as a Systems Engineer supporting an evolutionary Navy
                     Electro-Optic / Infrared (EO/IR) sensor system acquisition program.
                     I graduated from UMBC with a Bachelor of Science in Mechanical Engineering in 2023, 
-                    and I will be beginning the Online Masters in Computer Science program at Georgia Tech in January 2025.
+                    and I'll be beginning the Online Masters in Computer Science program at Georgia Tech in January 2025.
                     My professional interests are in robotics and other applications of algorithms to real world problems.
                 </div>
                     

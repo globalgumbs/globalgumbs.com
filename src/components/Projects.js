@@ -8,7 +8,7 @@ const Projects = () => {
             <div className="headline">Projects</div>
             <div className="project-box">
                 <div className="project-title">
-                    <a href="/predictions">NBA Predictions </a>
+                    <a href="/predictions">NBA Predictions</a>
                     <img src={linkLogo} alt="link" className="link-logo"/>
                 </div>
 
