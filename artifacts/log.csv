@@ -89,3 +89,6 @@ game_id,home_team_id,home_team_name,away_team_id,away_team_name,prediction,winne
 0022400149,1610612756,Phoenix Suns,1610612757,Portland Trail Blazers,0.21,0,11-02-2024
 0022400148,1610612743,Denver Nuggets,1610612762,Utah Jazz,0.11,0,11-02-2024
 0022400150,1610612746,Los Angeles Clippers,1610612760,Oklahoma City Thunder,0.84,1,11-02-2024
+0022400151,1610612751,Brooklyn Nets,1610612765,Detroit Pistons,0.21,1,11-03-2024
+0022400152,1610612740,New Orleans Pelicans,1610612737,Atlanta Hawks,0.22,1,11-03-2024
+0022400153,1610612742,Dallas Mavericks,1610612753,Orlando Magic,0.38,0,11-03-2024
