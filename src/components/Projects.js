@@ -21,12 +21,12 @@ const Projects = () => {
                     The model is an artificial neural network and it is trained on 8 years (around 10,000 games) of NBA game data
                     to predict the outcome of games based on difference between each team's average stats within this season.
                     Within Python, I used Pandas to clean and preprocess the data, NumPy for numerical calculations, and PyTorch/Scikit Learn
-                    to train and evaluate different models. I rewrote my personal website using ReactJS in order to update 
+                    to train and evaluate different models. I rewrote my personal website using React to update 
                     the predictions dynamically every day. The site is hosted on AWS Amplify and the model is deployed through
                     Github Actions.
                     <br /><br />
-                    I plan to contine to improve the model by experimenting with different features and hyperparameters in an attempt to improve
-                    the accuracy.
+                    I plan to contine to improve the model by experimenting with different features and hyperparameters in order
+                    to improve accuracy.
                 </div>
             </div>
             <hr className="project-divider"/>
@@ -67,7 +67,7 @@ const Projects = () => {
 
                 <div className="project-body">
                     In 2023, I built this page as a static website using HTML and CSS and hosted it
-                    using AWS Amplify. I ended up rewriting the site using ReactJS in 2024.
+                    using AWS Amplify. I ended up rewriting the site using React in 2024.
                 </div>
             </div>
             <hr className="project-divider"/>

@@ -16,10 +16,10 @@ function Home() {
 
                 <div className="blurb">
                     <br />
-                    Welcome to my site. I'm currently working as a Systems Engineer supporting an evolutionary Navy
+                    As a Systems Engineer, I currently support an evolutionary US Navy
                     Electro-Optic / Infrared (EO/IR) sensor system acquisition program.
                     I graduated from UMBC with a Bachelor of Science in Mechanical Engineering in 2023, 
-                    and I'll be beginning the Online Masters in Computer Science program at Georgia Tech in January 2025.
+                    and I'll be beginning my Masters program in Computer Science at Georgia Tech in January 2025.
                     My professional interests are in robotics and other applications of algorithms to real world problems.
                 </div>
                     

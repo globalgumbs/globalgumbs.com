@@ -52,7 +52,7 @@ function Predictions() {
           rel="noreferrer"> research from Conor Walsh and Alok Joshi of the University of Bath
         </a> on model selection
          for machine learning in sports analysis. The features used include current season team box
-         score statistics and last season's win percentage. Future improvements to the model may 
+         score statistics and last season's win percentage for each team. Future improvements to the model may 
          involve incorporating player statistics, injury information, and other relevant factors.
          The chosen model is an <b>Artificial Neural Network (ANN)</b> with a Multi-Layer Perceptron (MLP)
          architecture, comprised of 1 hidden layer. The model's Expected Calibration Error (ECE)
