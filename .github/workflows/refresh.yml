@@ -1,5 +1,7 @@
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "30 16 * * *" 
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -13,23 +15,33 @@ jobs:
           cache: 'pip'
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
+
       - name: Download artifacts folder
         uses: actions/download-artifact@v4
         with:
           name: artifacts
           path: ./artifacts/**
+
       - name: Run evaluation script
         run: python3 scripts/evaluate.py
       - name: Make predictions for todays games
         run: python3 scripts/update.py
+
+      - name: Ensure artifacts folder is writable and not ignored
+        run: |
+          chmod -R 755 artifacts/
+          git add artifacts/
+      - uses: oleksiyrudenko/gha-git-credentials@v2-latest
+        with:
+          global: true
+          actor: 'AG GitHub Actions'
+          token: '${{ secrets.GITHUB_TOKEN }}'
+      - run: |
+          git commit -am "daily refresh"
+          git push
+
       - name: Upload artifacts folder
         uses: actions/upload-artifact@v4
         with:
           name: artifacts
-          path: ./artifacts/**
-      - name: Git Push
-        run: |
-          git config --global user.name globalgumbs
-          git config --global user.email albertgumbs38@gmail.com
-          git commit -am "daily refresh"
-          git push
+          path: ./artifacts/

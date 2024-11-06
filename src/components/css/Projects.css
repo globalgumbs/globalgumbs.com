@@ -1,0 +1,40 @@
+.Projects {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.project-box {
+    padding: 5vh 0;
+}
+
+.project-title {
+    font-size: 22px;
+    font-weight: 600;
+    float: left;
+}
+
+.project-date {
+    font-size: 20px;
+    font-weight: 600;
+    float: right;
+    color: rgb(150, 150, 150);
+}
+
+.project-body {
+    padding: 2vh 0 5vh 0;
+    float: left;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.project-divider {
+    width: 60%;
+    margin: auto;
+}
+
+.link-logo {
+    height: 15px;
+    margin: 0 10px;
+    display: inline-block;
+}

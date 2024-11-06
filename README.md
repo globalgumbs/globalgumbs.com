@@ -1,7 +1,1 @@
-# globalgumbs.com
-
-Second version of my personal website.
-
-
-
---updated 9/20/23
+Source code for my personal website globalgumbs.com. Uses a React frontend and a Python backend. I trained and deployed a machine learning model to [predict the outcome of NBA games](globalgumbs.com/predictions). The model is an artificial neural network and it is trained on 8 years (around 10,000 games) of NBA game data to predict the outcome of games based on difference between each team's average stats within this season. Within Python, I used Pandas to clean and preprocess the data, NumPy for numerical calculations, and PyTorch/Scikit Learn to train and evaluate different models.

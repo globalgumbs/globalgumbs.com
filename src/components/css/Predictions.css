@@ -1,0 +1,13 @@
+.info-box {
+    margin: 0 auto;
+    padding: 50px 0 20px 0;
+    width: 80vw;
+    max-width: 800px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.cal-curve {
+    width: 100%;
+    max-width: 600px;
+}

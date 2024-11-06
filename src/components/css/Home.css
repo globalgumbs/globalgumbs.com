@@ -1,0 +1,59 @@
+.Home {
+    text-align: center;
+    padding: 0 10vw;
+}
+
+.About {
+    min-height: 100vh;
+}
+
+.blurb {
+    font-size: 20px; 
+    line-height: 27.5px;
+}
+
+.divider {
+    width: 60%;
+    margin: 5% auto;
+}
+
+.social-bar {
+    display: inline-flex;
+    height: 65px;
+}
+.social {
+    height: 50px;
+}
+
+.email {
+    height: 60px;
+}
+
+.email:hover {
+    height: 70px;
+}
+
+.social:hover {
+    height: 60px;
+}
+
+.socialLink {
+    text-decoration: none;
+    color: inherit;
+    padding: 0 20px;
+    margin: auto;
+    width: 70px;
+}
+
+.arrowLink {
+    display: block;
+}
+
+.arrow {
+    width: 100px;
+    padding-top: 2vh;
+}
+
+.arrow:hover {
+    width: 125px;
+}

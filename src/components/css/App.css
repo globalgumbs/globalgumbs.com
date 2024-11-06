@@ -1,0 +1,26 @@
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  max-width: 900px;
+  justify-items: center;
+  margin: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: rgb(129, 167, 177)
+}
+
+b {
+  font-weight: 600;
+}
+
+.headline {
+  font-size: 32px; 
+  font-weight: 600;
+  text-align: center;
+}
