@@ -24,7 +24,7 @@
     list-style-type: none;
     display: flex;
     text-align: center;
-    margin: 0 15vw 0 0;
+    margin: 0 2vw 0 0;
     justify-content: space-between;
     padding-inline: 0;
     
@@ -32,12 +32,12 @@
 
 .nav-list-item {
     width: fit-content;
-    padding: 2vh 2vw 2vh 7vw;
+    padding: 3vh 2vw 2vh 7vw;
 }
 
 .link {
     display: block;
-    width: 10vw;
+    white-space: nowrap;
     color: black;
     text-decoration: none;
     font-size: 20px;

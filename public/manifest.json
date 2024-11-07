@@ -1,6 +1,6 @@
 {
-  "short_name": "NBA Predictor",
-  "name": "Machine Learning NBA Predictions",
+  "short_name": "NBA Game Predictor",
+  "name": "Machine Learning NBA Game Predictions",
   "icons": [
   ],
   "start_url": ".",

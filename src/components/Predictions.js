@@ -25,7 +25,7 @@ function Predictions() {
   if (Object.keys(data).length === 0) {
     return (
       <div>
-        <h1 className='pred-header'>No games today</h1>
+        <h1 className='headline'>No games today</h1>
       </div>
     );
   }
@@ -49,9 +49,9 @@ function Predictions() {
         This project was inspired by <a 
           href="https://www.sciencedirect.com/science/article/pii/S266682702400015X#appSB"
           target="_blank"
-          rel="noreferrer"> research from Conor Walsh and Alok Joshi of the University of Bath
-        </a> on model selection
-         for machine learning in sports analysis. The features used include current season team box
+          rel="noreferrer">research
+        </a> from Conor Walsh and Alok Joshi of the University of Bath on model selection
+         for machine learning in sports analysis. The features include current season team box
          score statistics and last season's win percentage for each team. Future improvements to the model may 
          involve incorporating player statistics, injury information, and other relevant factors.
          The chosen model is an <b>Artificial Neural Network (ANN)</b> with a Multi-Layer Perceptron (MLP)

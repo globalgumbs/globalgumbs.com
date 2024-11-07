@@ -17,16 +17,19 @@ const Projects = () => {
                 </div>
 
                 <div className="project-body">
-                    I trained and deployed a machine learning model to predict the outcome of NBA games. 
-                    The model is an artificial neural network and it is trained on 8 years (around 10,000 games) of NBA game data
-                    to predict the outcome of games based on difference between each team's average stats within this season.
-                    Within Python, I used Pandas to clean and preprocess the data, NumPy for numerical calculations, and PyTorch/Scikit Learn
-                    to train and evaluate different models. I rewrote my personal website using React to update 
-                    the predictions dynamically every day. The site is hosted on AWS Amplify and the model is deployed through
-                    Github Actions.
-                    <br /><br />
-                    I plan to contine to improve the model by experimenting with different features and hyperparameters in order
-                    to improve accuracy.
+                    Inspired by <a 
+                        href="https://www.sciencedirect.com/science/article/pii/S266682702400015X#appSB"
+                        target="_blank"
+                        rel="noreferrer">
+                        research
+                    </a> from 
+                    Conor Walsh and Alok Joshi of the University of Bath, I developed and deployed a machine learning model (Artifical Neural Network) to predict NBA game outcomes. The model is trained on eight years (approximately 10,000 games)
+                    of NBA data to predict game outcomes based on differences in each team's seasonal average stats. I utilized Pandas for data cleaning and preprocessing, 
+                    NumPy for numerical computations, and PyTorch/SciKit Learn for model training and evaluation.
+                    <br/><br/>
+                    To make the predictions accessible, I rebuilt my personal website using React, which dynamically updates daily with the latest predictions. The site is hosted on AWS Amplify, and the model deployment is automated through GitHub Actions.
+                    <br/><br/>
+                    I plan to enhance the model by experimenting with different features and fine-tuning hyperparameters, aiming to improve prediction accuracy and uncover new insights into the game.
                 </div>
             </div>
             <hr className="project-divider"/>
