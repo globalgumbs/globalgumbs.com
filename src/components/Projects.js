@@ -17,17 +17,17 @@ const Projects = () => {
                 </div>
 
                 <div className="project-body">
-                    Inspired by <a 
+                    I developed and deployed a machine learning model (Artifical Neural Network) to predict NBA game outcomes. The model is trained on eight years (approximately 10,000 games)
+                    of NBA data to predict game outcomes based on differences in each team's seasonal average stats. This approach was inspired by <a 
                         href="https://www.sciencedirect.com/science/article/pii/S266682702400015X#appSB"
                         target="_blank"
                         rel="noreferrer">
                         research
                     </a> from 
-                    Conor Walsh and Alok Joshi of the University of Bath, I developed and deployed a machine learning model (Artifical Neural Network) to predict NBA game outcomes. The model is trained on eight years (approximately 10,000 games)
-                    of NBA data to predict game outcomes based on differences in each team's seasonal average stats. I utilized Pandas for data cleaning and preprocessing, 
-                    NumPy for numerical computations, and PyTorch/SciKit Learn for model training and evaluation.
+                    Conor Walsh and Alok Joshi of the University of Bath.
                     <br/><br/>
-                    To make the predictions accessible, I rebuilt my personal website using React, which dynamically updates daily with the latest predictions. The site is hosted on AWS Amplify, and the model deployment is automated through GitHub Actions.
+                    I utilized Pandas for data cleaning and preprocessing, NumPy for numerical computations, and PyTorch/SciKit Learn for training and evaluation of models.
+                    To make the predictions accessible, I rebuilt my personal website using React, which dynamically updates daily with the latest predictions. The site is hosted on AWS and the model is deployed via GitHub Actions.
                     <br/><br/>
                     I plan to enhance the model by experimenting with different features and fine-tuning hyperparameters, aiming to improve prediction accuracy and uncover new insights into the game.
                 </div>
