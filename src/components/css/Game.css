@@ -1,25 +1,14 @@
-.Game {
-  text-align: center;
-  justify-content: center;
-  max-width: 1000px;
-}
-
 .game-container {
   text-align: center;
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 0 5vw
+  justify-content: space-around;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .team-container {
   padding-top: 10px;
-  width: 40vw;
-}
-
-.team-info {
-  text-align: center;
-  margin: 0 2vw
+  width: 30%;
 }
 
 .team {
@@ -42,11 +31,11 @@
   font-size: 30px;
   font-weight: 100;
   color: rgb(151, 151, 151);
-  width: 5vw;
+  width: 10%;
   height: 80px;
 }
 
 .game-divider {
-  width: 60%;
-  margin: 2.55vh auto;
+  width: 80%;
+  margin: 2.5vh auto;
 }

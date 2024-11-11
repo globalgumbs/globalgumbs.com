@@ -7,6 +7,11 @@
     height: 100vh;
 }
 
+.profile {
+    height: 225px;
+    padding: 10px 0;
+}
+
 .blurb {
     font-size: 20px; 
     line-height: 27.5px;

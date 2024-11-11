@@ -4,6 +4,7 @@ import githubIcon from './assets/Github.png';
 import emailIcon from './assets/Email.svg';
 import linkedinIcon from './assets/LinkedIn.png';
 import downArrow from './assets/down.png';
+import pfp from './assets/pfp.png';
 import Projects from './Projects';
 
 function Home() {
@@ -13,9 +14,9 @@ function Home() {
                 <div className="headline">
                     Albert K. Gumbs
                 </div>
-
+                
+                <img className="profile" src={pfp} alt="headshot"></img>
                 <div className="blurb">
-                    <br />
                     As a Systems Engineer, I currently support an evolutionary US Navy
                     Electro-Optic / Infrared (EO/IR) sensor system acquisition program.
                     I graduated from UMBC with a Bachelor of Science in Mechanical Engineering in 2023, 

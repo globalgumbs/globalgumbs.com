@@ -23,8 +23,6 @@ def get_results(date: str) -> Optional[dict[str, dict[str, int]]]:
         "DNT": "1",
         "x-postal-code": "21114"
     }
-    # with open("backend/yesterday.json", "r") as f:
-    #     response = json.load(f)
     response = requests.get(url, headers=headers)
     
     if response.status_code != 200:
@@ -77,7 +75,6 @@ def eval_preds(results: Optional[dict[str, dict[str, int]]]) -> Optional[pd.Data
             continue
     log = pd.concat([log, df], ignore_index=True)
     log.to_csv(LOG_PATH, index=False)
-#    log.to_csv(f"./artifacts/log_{str(date.replace("/", "-"))}.csv", index=False)
     print(df)
     return df
 
