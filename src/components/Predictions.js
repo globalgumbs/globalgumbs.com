@@ -46,7 +46,7 @@ function Predictions() {
       ))}
       <div className='info-box'>
         <p>
-         The chosen model is an <b>Artificial Neural Network (ANN)</b> with a Multi-Layer Perceptron (MLP)
+         The featured model is an <b>Artificial Neural Network (ANN)</b> with a Multi-Layer Perceptron (MLP)
          architecture. The features include current season team box
          score statistics and last season's win percentage for each team. Future improvements to the model may 
          involve incorporating player statistics, injury information, and other relevant factors. This approach was inspired by <a 

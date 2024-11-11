@@ -3,6 +3,10 @@
     padding-bottom: 10px;
     display: flex;
     justify-content: space-around;
+    background-color: white;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    margin-bottom: 20px;
+    height: 50px;
 }
 
 .nav-container {
@@ -25,21 +29,27 @@
     list-style-type: none;
     display: flex;
     text-align: center;
-    margin: 0;
     justify-content: space-between;
     padding-inline: 0;
-    
-}   
-
-.nav-list-item {
-    width: fit-content;
-    padding: 3vh 2vw 2vh 3vw;
-}
+    width: 100%;
+}  
 
 .link {
     display: block;
     white-space: nowrap;
     color: black;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 22.5px;
+}
+
+.left {
+    width: 50%;
+    float: left;
+
+}
+
+.right {
+    width: 50%;
+    float: right;
+
 }

@@ -13,12 +13,11 @@ function Nav() {
     return (
         <div className="Nav">
             <nav className="nav-container">
-                <div className="gg">gg.</div>
                 <ul className="nav-list">
-                    <li className="nav-list-item" >
+                    <li className="nav-list-item left" >
                         <Link className="link" style={linkStyle("/")} to="/">Home</Link>
                     </li>
-                    <li className="nav-list-item">
+                    <li className="nav-list-item right">
                         <Link className="link" style={linkStyle("/predictions")} to="/predictions">NBA Predictions</Link>
                     </li>
                 </ul>

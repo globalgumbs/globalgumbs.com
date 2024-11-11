@@ -26,10 +26,11 @@ const Projects = () => {
                     </a> from 
                     Conor Walsh and Alok Joshi of the University of Bath.
                     <br/><br/>
-                    <b>Stack:</b> I used Pandas for data cleaning and preprocessing, NumPy for numerical computations, and PyTorch/SciKit Learn for training and evaluation of models.
+                    <b>Stack:</b> The model was developed using a stack of Python libararies.
+                    I used Pandas for data cleaning and preprocessing, NumPy for numerical computations, and PyTorch/Sci-kit Learn for training and evaluation of models.
                     To make the predictions accessible, I rebuilt my personal website using React, which dynamically updates daily with the latest predictions. The site is hosted on AWS and the model is deployed via GitHub Actions.
                     <br/><br/>
-                    <b>Future Work:</b> I plan to improve the model by experimenting with different features including player injuries and statistics in order to increase prediction accuracy and uncover new insights into the game.
+                    <b>Future Work:</b> I plan to improve the model by experimenting with different features including player statistics and team health in order to increase prediction accuracy and uncover new insights into the game.
                 </div>
             </div>
             <hr className="project-divider"/>
@@ -97,7 +98,7 @@ const Projects = () => {
             <hr className="project-divider"/>
             <div className="project-box">
                 <div className="project-title">
-                    Walmart ACO
+                    Walmart Auto-Checkout
                 </div>
 
                 <div className="project-date">
