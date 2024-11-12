@@ -150,3 +150,8 @@ game_id,home_team_id,home_team_name,away_team_id,away_team_name,prediction,winne
 0022400208,1610612743,Denver Nuggets,1610612742,Dallas Mavericks,0.33,0,11-10-2024
 0022400210,1610612757,Portland Trail Blazers,1610612763,Memphis Grizzlies,0.57,1,11-10-2024
 0022400211,1610612747,Los Angeles Lakers,1610612761,Toronto Raptors,0.21,0,11-10-2024
+0022400216,1610612759,San Antonio Spurs,1610612758,Sacramento Kings,0.68,0,11-11-2024
+0022400215,1610612760,Oklahoma City Thunder,1610612746,Los Angeles Clippers,0.22,0,11-11-2024
+0022400214,1610612740,New Orleans Pelicans,1610612751,Brooklyn Nets,0.25,1,11-11-2024
+0022400213,1610612745,Houston Rockets,1610612764,Washington Wizards,0.15,0,11-11-2024
+0022400212,1610612741,Chicago Bulls,1610612739,Cleveland Cavaliers,0.7,1,11-11-2024
