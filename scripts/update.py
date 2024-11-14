@@ -1,6 +1,7 @@
 import json
 import pandas as pd
 import numpy as np
+from datetime import date
 from typing import Tuple, Optional
 from model1 import Model1
 from game import Game
@@ -23,16 +24,16 @@ def get_teams_stats(games: list[Game]):
             X.loc[i] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, h[-1] - a[-1]]
         else:
             X.loc[i] = np.subtract(h, a)
-    print(X)
     return X
 
 def publish_data(games: list[Game], y: Optional[list[Tuple[float, float]]]=None):
-    body = {}
+    today = date.today().strftime("%m/%d/%Y")
+    body = {today: {}}
     if not y is None:
         for i, game in enumerate(games):
             game.prediction = y[i][0]
             
-            body[game.game_id] = {
+            body[today][game.game_id] = {
                 "home_team_id": str(game.home_team_id),
                 "home_team_name": game.home_team_name,
                 "away_team_id": str(game.away_team_id),

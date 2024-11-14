@@ -15,8 +15,7 @@ class Game:
         self.away_team_name: str = TEAMS[str(away_team_id)]["teamName"]
         self.home_team_logo: str = TEAMS[str(home_team_id)]["logo"]
         self.away_team_logo: str = TEAMS[str(away_team_id)]["logo"]
-
-        self.winner: Optional[int] = None         
+     
         self.prediction: Optional[float] = None
 
     @staticmethod
@@ -34,12 +33,14 @@ class Game:
                 away_team_id = away_team_id
             )         
             games.append(game_obj)
-       
-#       for game in games: print(game)
         return games
+    
+    def get_winner(self):
+        if self.prediction < 0.5:
+            return self.home_team_name
+        return self.away_team_name
 
     def __str__(self):
         return (
-            f"Game ID: {self.game_id} | Home Team: {self.home_team_id} - {self.home_team_name} | Away Team ID: {self.away_team_id} - {self.away_team_name} | " + 
-            f"Predicted Winner: {self.prediction} | Actual Winner: {self.winner}"
+            f"Game ID: {self.game_id} | Home Team: {self.home_team_name} | Away Team ID: {self.away_team_name} | Predicted Winner: {self.get_winner()}"
         )    

@@ -11,7 +11,7 @@ TODAY_PATH = "./src/today.json"
 with open("./artifacts/teams.json", "r") as f: teams =json.load(f)
 
 def get_results(date: str) -> Optional[dict[str, dict[str, int]]]:
-    """ Date: str in form '10/17/2024' ------------- Returns {game_id: winner (0 for home | 1 for away)} for all games played on the input date """
+    """ date: str in form '10/17/2024' ------------- Returns {game_id: winner (0 for home | 1 for away)} for all games played on the input date """
     url = f"https://core-api.nba.com/cp/api/v1.8/feeds/gamecardfeed?gamedate={date}&platform=web"
     headers = {
         "sec-ch-ua-platform": "\"Android\"",
@@ -40,17 +40,16 @@ def get_results(date: str) -> Optional[dict[str, dict[str, int]]]:
     except:
         print("No games on ", date)
         return None
-#    print(results)
     return results
 
 
-def eval_preds(results: Optional[dict[str, dict[str, int]]]) -> Optional[pd.DataFrame]:
+def eval_preds(results: Optional[dict[str, dict[str, int]]], date: str) -> Optional[pd.DataFrame]:
     if not results:
         print("No results to evaluate")
         return None
     
     with open(TODAY_PATH, "r") as f:
-        games = json.load(f)
+        games = json.load(f)[date]
     date = list(results.keys())[0]
     if not games:
         print("No games on ", date)
@@ -71,11 +70,15 @@ def eval_preds(results: Optional[dict[str, dict[str, int]]]) -> Optional[pd.Data
                 datetime.strptime(date, '%m/%d/%Y').strftime('%m-%d-%Y')
             ]
         except:
-            print("Game ID not found in today.json")
+            print(f"Game ID: {game_id} not found in today.json")
             continue
+    if df.empty:
+        return None
     log = pd.concat([log, df], ignore_index=True)
     log.to_csv(LOG_PATH, index=False)
-    print(df)
+    print(df.drop(columns=["game_id", "date", "home_team_id", "away_team_id"]))
+    print("Accuracy: ", accuracy_fn(df))
+    print ("Season accuracy to date: ", accuracy_fn(log))
     return df
 
 def get_boxscore(game_id: str) -> Optional[dict[str, list]]:
@@ -112,7 +115,6 @@ def get_boxscore(game_id: str) -> Optional[dict[str, list]]:
     # with open("backend/boxscore.json", "r") as f:
     #     body = json.load(f)
     body = response.json()
-#    print(response.status_code)
     
     home_team_id = str(body["game"]["homeTeam"]["teamId"])
     away_team_id = str(body["game"]["awayTeam"]["teamId"])
@@ -134,10 +136,10 @@ def get_boxscore(game_id: str) -> Optional[dict[str, list]]:
         stats[team[1]].append(body["game"][team[0]]["statistics"]["foulsPersonal"])
     return stats
         
-def update_stats_table(df: Optional[pd.DataFrame]) -> bool:
+def update_stats_table(df: Optional[pd.DataFrame]):
     if df is None:
         print("No data to update")
-        return False
+        return
     updated = []
     for i, row in df.iterrows():
         try:
@@ -176,19 +178,23 @@ def update_stats_table(df: Optional[pd.DataFrame]) -> bool:
         except Exception as e:
             print("Failed to update stats for game:", game_id)
             print(e)
-    with open("./artifacts/teams.json", "w") as f:  # Ensure the path and file extension
+    with open("./artifacts/teams.json", "w") as f:
         json.dump(teams, f, indent=4)
     print("Updated stats for:", updated)
-    return True
 
+def accuracy_fn(df: pd.DataFrame):   
+    correct = 0
+    for i, game in df.iterrows():
+        if round(game.prediction) == game.winner:
+            correct += 1
+    return( round(correct / len(df), 3) )
 
-def create_df(): # Run this once to create the log.csv file
+def create_df(): # Creates a fresh log.csv file
     df = pd.DataFrame(data=[], columns=["game_id", "home_team_id", "home_team_name", "away_team_id", "away_team_name", "prediction", "winner", "date"])
     df.to_csv(LOG_PATH, index=False)
 
 if __name__ == "__main__":
     yesterday = (datetime.now() - timedelta(1)).strftime('%m/%d/%Y')
     results = get_results(yesterday)
-    print(results)
-    df = eval_preds(results)
+    df = eval_preds(results, yesterday)
     update_stats_table(df)

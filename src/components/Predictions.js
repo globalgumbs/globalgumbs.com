@@ -5,34 +5,41 @@ import Game from './Game';
 import data from '../today.json';
 import calCurve from './assets/cal_curve.png';
 
-function getDate() {
-  const today = new Date();
-  const options = { weekday: 'long', month: 'short', day: 'numeric' };
-  return today.toLocaleDateString('en-US', options);
+function getDate(date) {
+  // MM/DD/YY to weekday, month DD
+  const [month, day, year] = date.split("/").map(Number);
+  const dateString = new Date(year + 2000, month - 1, day);
+
+  return new Intl.DateTimeFormat("en-US", {
+    weekday: "long",
+    month: "short",
+    day: "numeric",
+  }).format(dateString);
 }
 
 function Predictions() {
-
-  const date = useState([getDate()]);
+  const date = Object.keys(data).at(0);
+  const dateString = getDate(date);
   const [games, setGames] = useState([]);
 
   useEffect(() => {
-    const arr = Object.values(data);
+    const arr = Object.values(data[date]);
     console.log(arr);
     setGames(arr);
-  }, []);
+  }, [date]);
 
-  if (Object.keys(data).length === 0) {
+  if (Object.keys(data[date]).length === 0) {
     return (
       <div>
-        <h1 className='headline'>No games today</h1>
+        <h1 className='headline'>{dateString}</h1>
+        <div className='no-games'>No games today</div>
       </div>
     );
   }
 
   return (
     <div className="Predictions">
-      <h1 className='headline'>{date}</h1>
+      <h1 className='headline'>{dateString}</h1>
       {games.map((game, index) => (
         <Game
           key={index}
