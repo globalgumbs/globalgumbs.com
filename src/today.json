@@ -1,94 +1,76 @@
 {
-    "11/17/2024": {
-        "0022400234": {
-            "home_team_id": "1610612750",
-            "home_team_name": "Minnesota Timberwolves",
-            "away_team_id": "1610612756",
-            "away_team_name": "Phoenix Suns",
-            "prediction": 0.41,
-            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612750/primary/L/logo.svg",
-            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612756/primary/L/logo.svg"
+    "11/18/2024": {
+        "0022400244": {
+            "home_team_id": "1610612765",
+            "home_team_name": "Detroit Pistons",
+            "away_team_id": "1610612741",
+            "away_team_name": "Chicago Bulls",
+            "prediction": 0.56,
+            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612765/primary/L/logo.svg",
+            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612741/primary/L/logo.svg"
         },
-        "0022400235": {
-            "home_team_id": "1610612754",
-            "home_team_name": "Indiana Pacers",
-            "away_team_id": "1610612748",
-            "away_team_name": "Miami Heat",
-            "prediction": 0.61,
-            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612754/primary/L/logo.svg",
-            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612748/primary/L/logo.svg"
+        "0022400245": {
+            "home_team_id": "1610612748",
+            "home_team_name": "Miami Heat",
+            "away_team_id": "1610612755",
+            "away_team_name": "Philadelphia 76ers",
+            "prediction": 0.24,
+            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612748/primary/L/logo.svg",
+            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612755/primary/L/logo.svg"
         },
-        "0022400236": {
-            "home_team_id": "1610612739",
-            "home_team_name": "Cleveland Cavaliers",
-            "away_team_id": "1610612766",
-            "away_team_name": "Charlotte Hornets",
-            "prediction": 0.13,
-            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612739/primary/L/logo.svg",
-            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612766/primary/L/logo.svg"
-        },
-        "0022400237": {
-            "home_team_id": "1610612764",
-            "home_team_name": "Washington Wizards",
-            "away_team_id": "1610612765",
-            "away_team_name": "Detroit Pistons",
-            "prediction": 0.45,
-            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612764/primary/L/logo.svg",
-            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612765/primary/L/logo.svg"
-        },
-        "0022400238": {
-            "home_team_id": "1610612763",
-            "home_team_name": "Memphis Grizzlies",
-            "away_team_id": "1610612743",
-            "away_team_name": "Denver Nuggets",
-            "prediction": 0.7,
-            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612763/primary/L/logo.svg",
-            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612743/primary/L/logo.svg"
-        },
-        "0022400239": {
-            "home_team_id": "1610612757",
-            "home_team_name": "Portland Trail Blazers",
-            "away_team_id": "1610612737",
-            "away_team_name": "Atlanta Hawks",
-            "prediction": 0.51,
-            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612757/primary/L/logo.svg",
-            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612737/primary/L/logo.svg"
-        },
-        "0022400240": {
+        "0022400246": {
             "home_team_id": "1610612752",
             "home_team_name": "New York Knicks",
-            "away_team_id": "1610612751",
-            "away_team_name": "Brooklyn Nets",
-            "prediction": 0.24,
+            "away_team_id": "1610612764",
+            "away_team_name": "Washington Wizards",
+            "prediction": 0.12,
             "home_team_logo": "https://cdn.nba.com/logos/nba/1610612752/primary/L/logo.svg",
-            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612751/primary/L/logo.svg"
+            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612764/primary/L/logo.svg"
         },
-        "0022400241": {
-            "home_team_id": "1610612741",
-            "home_team_name": "Chicago Bulls",
+        "0022400247": {
+            "home_team_id": "1610612761",
+            "home_team_name": "Toronto Raptors",
+            "away_team_id": "1610612754",
+            "away_team_name": "Indiana Pacers",
+            "prediction": 0.55,
+            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612761/primary/L/logo.svg",
+            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612754/primary/L/logo.svg"
+        },
+        "0022400248": {
+            "home_team_id": "1610612749",
+            "home_team_name": "Milwaukee Bucks",
             "away_team_id": "1610612745",
             "away_team_name": "Houston Rockets",
-            "prediction": 0.59,
-            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612741/primary/L/logo.svg",
+            "prediction": 0.52,
+            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612749/primary/L/logo.svg",
             "away_team_logo": "https://cdn.nba.com/logos/nba/1610612745/primary/L/logo.svg"
         },
-        "0022400242": {
-            "home_team_id": "1610612760",
-            "home_team_name": "Oklahoma City Thunder",
-            "away_team_id": "1610612742",
-            "away_team_name": "Dallas Mavericks",
-            "prediction": 0.19,
-            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612760/primary/L/logo.svg",
-            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612742/primary/L/logo.svg"
+        "0022400249": {
+            "home_team_id": "1610612756",
+            "home_team_name": "Phoenix Suns",
+            "away_team_id": "1610612753",
+            "away_team_name": "Orlando Magic",
+            "prediction": 0.4,
+            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612756/primary/L/logo.svg",
+            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612753/primary/L/logo.svg"
         },
-        "0022400243": {
+        "0022400250": {
+            "home_team_id": "1610612758",
+            "home_team_name": "Sacramento Kings",
+            "away_team_id": "1610612737",
+            "away_team_name": "Atlanta Hawks",
+            "prediction": 0.32,
+            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612758/primary/L/logo.svg",
+            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612737/primary/L/logo.svg"
+        },
+        "0022400251": {
             "home_team_id": "1610612746",
             "home_team_name": "Los Angeles Clippers",
-            "away_team_id": "1610612762",
-            "away_team_name": "Utah Jazz",
-            "prediction": 0.21,
+            "away_team_id": "1610612744",
+            "away_team_name": "Golden State Warriors",
+            "prediction": 0.55,
             "home_team_logo": "https://cdn.nba.com/logos/nba/1610612746/primary/L/logo.svg",
-            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612762/primary/L/logo.svg"
+            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612744/primary/L/logo.svg"
         }
     }
 }
