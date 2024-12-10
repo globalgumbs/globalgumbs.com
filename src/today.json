@@ -1,13 +1,22 @@
 {
-    "12/09/2024": {
-        "0022400359": {
-            "home_team_id": "1610612761",
-            "home_team_name": "Toronto Raptors",
-            "away_team_id": "1610612752",
-            "away_team_name": "New York Knicks",
-            "prediction": 0.68,
-            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612761/primary/L/logo.svg",
-            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612752/primary/L/logo.svg"
+    "12/10/2024": {
+        "0022401201": {
+            "home_team_id": "1610612749",
+            "home_team_name": "Milwaukee Bucks",
+            "away_team_id": "1610612753",
+            "away_team_name": "Orlando Magic",
+            "prediction": 0.42,
+            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612749/primary/L/logo.svg",
+            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612753/primary/L/logo.svg"
+        },
+        "0022401203": {
+            "home_team_id": "1610612760",
+            "home_team_name": "Oklahoma City Thunder",
+            "away_team_id": "1610612742",
+            "away_team_name": "Dallas Mavericks",
+            "prediction": 0.26,
+            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612760/primary/L/logo.svg",
+            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612742/primary/L/logo.svg"
         }
     }
 }
