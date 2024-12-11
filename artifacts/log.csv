@@ -358,3 +358,5 @@ game_id,home_team_id,home_team_name,away_team_id,away_team_name,prediction,winne
 0022400356,1610612746,Los Angeles Clippers,1610612745,Houston Rockets,0.4,1,12-08-2024
 0022400358,1610612747,Los Angeles Lakers,1610612757,Portland Trail Blazers,0.17,0,12-08-2024
 0022400359,1610612761,Toronto Raptors,1610612752,New York Knicks,0.68,1,12-09-2024
+0022401201,1610612749,Milwaukee Bucks,1610612753,Orlando Magic,0.42,0,12-10-2024
+0022401203,1610612760,Oklahoma City Thunder,1610612742,Dallas Mavericks,0.26,0,12-10-2024
