@@ -362,3 +362,6 @@ game_id,home_team_id,home_team_name,away_team_id,away_team_name,prediction,winne
 0022401203,1610612760,Oklahoma City Thunder,1610612742,Dallas Mavericks,0.26,0,12-10-2024
 0022401202,1610612752,New York Knicks,1610612737,Atlanta Hawks,0.24,1,12-11-2024
 0022401204,1610612745,Houston Rockets,1610612744,Golden State Warriors,0.42,0,12-11-2024
+0022401206,1610612748,Miami Heat,1610612761,Toronto Raptors,0.18,0,12-12-2024
+0022401205,1610612738,Boston Celtics,1610612765,Detroit Pistons,0.09,0,12-12-2024
+0022401207,1610612740,New Orleans Pelicans,1610612758,Sacramento Kings,0.5,1,12-12-2024
