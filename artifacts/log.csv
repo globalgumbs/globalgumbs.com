@@ -365,3 +365,11 @@ game_id,home_team_id,home_team_name,away_team_id,away_team_name,prediction,winne
 0022401206,1610612748,Miami Heat,1610612761,Toronto Raptors,0.18,0,12-12-2024
 0022401205,1610612738,Boston Celtics,1610612765,Detroit Pistons,0.09,0,12-12-2024
 0022401207,1610612740,New Orleans Pelicans,1610612758,Sacramento Kings,0.5,1,12-12-2024
+0022401209,1610612755,Philadelphia 76ers,1610612754,Indiana Pacers,0.42,1,12-13-2024
+0022401208,1610612739,Cleveland Cavaliers,1610612764,Washington Wizards,0.09,0,12-13-2024
+0022401212,1610612741,Chicago Bulls,1610612766,Charlotte Hornets,0.35,0,12-13-2024
+0022401211,1610612763,Memphis Grizzlies,1610612751,Brooklyn Nets,0.37,0,12-13-2024
+0022401210,1610612750,Minnesota Timberwolves,1610612747,Los Angeles Lakers,0.37,0,12-13-2024
+0022401213,1610612743,Denver Nuggets,1610612746,Los Angeles Clippers,0.37,0,12-13-2024
+0022401214,1610612762,Utah Jazz,1610612756,Phoenix Suns,0.69,1,12-13-2024
+0022401215,1610612757,Portland Trail Blazers,1610612759,San Antonio Spurs,0.56,1,12-13-2024
