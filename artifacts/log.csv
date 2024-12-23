@@ -417,3 +417,6 @@ game_id,home_team_id,home_team_name,away_team_id,away_team_name,prediction,winne
 0022400386,1610612759,San Antonio Spurs,1610612757,Portland Trail Blazers,0.32,0,12-21-2024
 0022400385,1610612742,Dallas Mavericks,1610612746,Los Angeles Clippers,0.45,0,12-21-2024
 0022400387,1610612756,Phoenix Suns,1610612765,Detroit Pistons,0.18,1,12-21-2024
+0022400389,1610612758,Sacramento Kings,1610612754,Indiana Pacers,0.43,1,12-22-2024
+0022400388,1610612761,Toronto Raptors,1610612745,Houston Rockets,0.58,1,12-22-2024
+0022400390,1610612740,New Orleans Pelicans,1610612743,Denver Nuggets,0.65,1,12-22-2024
