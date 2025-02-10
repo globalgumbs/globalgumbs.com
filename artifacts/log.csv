@@ -782,3 +782,6 @@ game_id,home_team_id,home_team_name,away_team_id,away_team_name,prediction,winne
 0022400749,1610612756,Phoenix Suns,1610612743,Denver Nuggets,0.53,1,02-08-2025
 0022400750,1610612758,Sacramento Kings,1610612740,New Orleans Pelicans,0.44,0,02-08-2025
 0022400751,1610612746,Los Angeles Clippers,1610612762,Utah Jazz,0.18,0,02-08-2025
+0022400752,1610612765,Detroit Pistons,1610612766,Charlotte Hornets,0.49,0,02-09-2025
+0022400754,1610612749,Milwaukee Bucks,1610612755,Philadelphia 76ers,0.44,0,02-09-2025
+0022400753,1610612745,Houston Rockets,1610612761,Toronto Raptors,0.29,0,02-09-2025
