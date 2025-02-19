@@ -1,3 +1,13 @@
 {
-    "02/18/2025": {}
+    "02/19/2025": {
+        "0022400524": {
+            "home_team_id": "1610612747",
+            "home_team_name": "Los Angeles Lakers",
+            "away_team_id": "1610612766",
+            "away_team_name": "Charlotte Hornets",
+            "prediction": 0.23,
+            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612747/primary/L/logo.svg",
+            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612766/primary/L/logo.svg"
+        }
+    }
 }
