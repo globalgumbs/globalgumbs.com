@@ -814,3 +814,4 @@ game_id,home_team_id,home_team_name,away_team_id,away_team_name,prediction,winne
 0022400780,1610612743,Denver Nuggets,1610612757,Portland Trail Blazers,0.16,0,02-12-2025
 0022400782,1610612742,Dallas Mavericks,1610612744,Golden State Warriors,0.41,0,02-12-2025
 0022400783,1610612746,Los Angeles Clippers,1610612763,Memphis Grizzlies,0.29,0,02-12-2025
+0022400524,1610612747,Los Angeles Lakers,1610612766,Charlotte Hornets,0.23,1,02-19-2025
