@@ -856,3 +856,10 @@ game_id,home_team_id,home_team_name,away_team_id,away_team_name,prediction,winne
 0022400826,1610612760,Oklahoma City Thunder,1610612750,Minnesota Timberwolves,0.28,1,02-24-2025
 0022400827,1610612762,Utah Jazz,1610612757,Portland Trail Blazers,0.44,1,02-24-2025
 0022400828,1610612758,Sacramento Kings,1610612766,Charlotte Hornets,0.28,0,02-24-2025
+0022400829,1610612761,Toronto Raptors,1610612738,Boston Celtics,0.71,1,02-25-2025
+0022400830,1610612753,Orlando Magic,1610612739,Cleveland Cavaliers,0.52,1,02-25-2025
+0022400833,1610612740,New Orleans Pelicans,1610612759,San Antonio Spurs,0.29,0,02-25-2025
+0022400832,1610612763,Memphis Grizzlies,1610612756,Phoenix Suns,0.5,0,02-25-2025
+0022400831,1610612745,Houston Rockets,1610612749,Milwaukee Bucks,0.44,0,02-25-2025
+0022400835,1610612747,Los Angeles Lakers,1610612742,Dallas Mavericks,0.43,0,02-25-2025
+0022400834,1610612744,Golden State Warriors,1610612766,Charlotte Hornets,0.23,0,02-25-2025
