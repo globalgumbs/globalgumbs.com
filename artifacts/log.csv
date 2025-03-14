@@ -981,3 +981,8 @@ game_id,home_team_id,home_team_name,away_team_id,away_team_name,prediction,winne
 0022400948,1610612748,Miami Heat,1610612746,Los Angeles Clippers,0.47,1,03-12-2025
 0022400953,1610612757,Portland Trail Blazers,1610612752,New York Knicks,0.73,1,03-12-2025
 0022400952,1610612743,Denver Nuggets,1610612750,Minnesota Timberwolves,0.46,1,03-12-2025
+0022400954,1610612765,Detroit Pistons,1610612764,Washington Wizards,0.3,1,03-13-2025
+0022400955,1610612749,Milwaukee Bucks,1610612747,Los Angeles Lakers,0.41,0,03-13-2025
+0022401141,1610612740,New Orleans Pelicans,1610612753,Orlando Magic,0.42,1,03-13-2025
+0022400956,1610612741,Chicago Bulls,1610612751,Brooklyn Nets,0.4,0,03-13-2025
+0022400957,1610612744,Golden State Warriors,1610612758,Sacramento Kings,0.38,0,03-13-2025
