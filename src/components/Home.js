@@ -19,9 +19,8 @@ function Home() {
                 <div className="blurb">
                     As a Systems Engineer, I currently support an evolutionary US Navy
                     electro-optic / infrared (EO/IR) sensor system acquisition program.
-                    I graduated from UMBC with a Bachelor of Science in Mechanical Engineering in 2023, 
-                    and I'll be beginning to pursue my Master's degree in Computer Science at Georgia Tech in January 2025.
-                    My professional interests are in robotics and other applications of algorithms to real world problems.
+                    I graduated from UMBC with a degree in Mechanical Engineering in 2023 
+                    and I am currently pursuing my Master's degree in Computer Science at Georgia Tech.
                 </div>
                     
                 <hr className="divider" />
