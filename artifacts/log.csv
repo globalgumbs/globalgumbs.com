@@ -1157,3 +1157,8 @@ game_id,home_team_id,home_team_name,away_team_id,away_team_name,prediction,winne
 0022401125,1610612744,Golden State Warriors,1610612743,Denver Nuggets,0.48,0,04-04-2025
 0022401127,1610612746,Los Angeles Clippers,1610612742,Dallas Mavericks,0.35,0,04-04-2025
 0022401126,1610612747,Los Angeles Lakers,1610612740,New Orleans Pelicans,0.39,0,04-04-2025
+0022401128,1610612737,Atlanta Hawks,1610612752,New York Knicks,0.61,1,04-05-2025
+0022401130,1610612755,Philadelphia 76ers,1610612750,Minnesota Timberwolves,0.58,1,04-05-2025
+0022401129,1610612765,Detroit Pistons,1610612763,Memphis Grizzlies,0.52,1,04-05-2025
+0022401131,1610612748,Miami Heat,1610612749,Milwaukee Bucks,0.45,1,04-05-2025
+0022401132,1610612746,Los Angeles Clippers,1610612742,Dallas Mavericks,0.34,0,04-05-2025
