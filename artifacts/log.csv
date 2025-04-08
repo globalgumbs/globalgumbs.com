@@ -1173,3 +1173,5 @@ game_id,home_team_id,home_team_name,away_team_id,away_team_name,prediction,winne
 0022401142,1610612743,Denver Nuggets,1610612754,Indiana Pacers,0.4,1,04-06-2025
 0022401143,1610612744,Golden State Warriors,1610612745,Houston Rockets,0.41,1,04-06-2025
 0022400617,1610612740,New Orleans Pelicans,1610612749,Milwaukee Bucks,0.52,1,04-06-2025
+0022401144,1610612765,Detroit Pistons,1610612758,Sacramento Kings,0.62,1,04-07-2025
+0022401145,1610612748,Miami Heat,1610612755,Philadelphia 76ers,0.39,0,04-07-2025
