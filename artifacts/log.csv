@@ -1232,3 +1232,5 @@ game_id,home_team_id,home_team_name,away_team_id,away_team_name,prediction,winne
 0022401193,1610612745,Houston Rockets,1610612743,Denver Nuggets,0.49,1,04-13-2025
 0052400101,1610612753,Orlando Magic,1610612737,Atlanta Hawks,0.34,0,04-15-2025
 0052400121,1610612744,Golden State Warriors,1610612763,Memphis Grizzlies,0.27,0,04-15-2025
+0052400111,1610612741,Chicago Bulls,1610612748,Miami Heat,0.57,1,04-16-2025
+0052400131,1610612758,Sacramento Kings,1610612742,Dallas Mavericks,0.44,1,04-16-2025
