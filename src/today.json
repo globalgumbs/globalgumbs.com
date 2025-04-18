@@ -1,3 +1,22 @@
 {
-    "04/17/2025": {}
+    "04/18/2025": {
+        "0052400201": {
+            "home_team_id": "1610612737",
+            "home_team_name": "Atlanta Hawks",
+            "away_team_id": "1610612748",
+            "away_team_name": "Miami Heat",
+            "prediction": 0.56,
+            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612737/primary/L/logo.svg",
+            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612748/primary/L/logo.svg"
+        },
+        "0052400211": {
+            "home_team_id": "1610612763",
+            "home_team_name": "Memphis Grizzlies",
+            "away_team_id": "1610612742",
+            "away_team_name": "Dallas Mavericks",
+            "prediction": 0.56,
+            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612763/primary/L/logo.svg",
+            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612742/primary/L/logo.svg"
+        }
+    }
 }
