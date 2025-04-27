@@ -1258,3 +1258,7 @@ game_id,home_team_id,home_team_name,away_team_id,away_team_name,prediction,winne
 0042400113,1610612753,Orlando Magic,1610612738,Boston Celtics,0.61,0,04-25-2025
 0042400133,1610612749,Milwaukee Bucks,1610612754,Indiana Pacers,0.45,0,04-25-2025
 0042400163,1610612750,Minnesota Timberwolves,1610612747,Los Angeles Lakers,0.31,0,04-25-2025
+0042400103,1610612748,Miami Heat,1610612739,Cleveland Cavaliers,0.47,1,04-26-2025
+0042400144,1610612763,Memphis Grizzlies,1610612760,Oklahoma City Thunder,0.79,1,04-26-2025
+0042400174,1610612746,Los Angeles Clippers,1610612743,Denver Nuggets,0.41,1,04-26-2025
+0042400153,1610612744,Golden State Warriors,1610612745,Houston Rockets,0.39,0,04-26-2025
