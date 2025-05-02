@@ -1274,3 +1274,5 @@ game_id,home_team_id,home_team_name,away_team_id,away_team_name,prediction,winne
 0042400175,1610612743,Denver Nuggets,1610612746,Los Angeles Clippers,0.45,0,04-29-2025
 0042400155,1610612745,Houston Rockets,1610612744,Golden State Warriors,0.47,0,04-30-2025
 0042400165,1610612747,Los Angeles Lakers,1610612750,Minnesota Timberwolves,0.56,1,04-30-2025
+0042400126,1610612765,Detroit Pistons,1610612752,New York Knicks,0.75,1,05-01-2025
+0042400176,1610612746,Los Angeles Clippers,1610612743,Denver Nuggets,0.42,0,05-01-2025
