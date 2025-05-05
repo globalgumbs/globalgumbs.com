@@ -1,22 +1,22 @@
 {
-    "05/04/2025": {
-        "0042400201": {
-            "home_team_id": "1610612739",
-            "home_team_name": "Cleveland Cavaliers",
-            "away_team_id": "1610612754",
-            "away_team_name": "Indiana Pacers",
-            "prediction": 0.41,
-            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612739/primary/L/logo.svg",
-            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612754/primary/L/logo.svg"
+    "05/05/2025": {
+        "0042400211": {
+            "home_team_id": "1610612738",
+            "home_team_name": "Boston Celtics",
+            "away_team_id": "1610612752",
+            "away_team_name": "New York Knicks",
+            "prediction": 0.35,
+            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612738/primary/L/logo.svg",
+            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612752/primary/L/logo.svg"
         },
-        "0042400157": {
-            "home_team_id": "1610612745",
-            "home_team_name": "Houston Rockets",
-            "away_team_id": "1610612744",
-            "away_team_name": "Golden State Warriors",
-            "prediction": 0.45,
-            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612745/primary/L/logo.svg",
-            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612744/primary/L/logo.svg"
+        "0042400221": {
+            "home_team_id": "1610612760",
+            "home_team_name": "Oklahoma City Thunder",
+            "away_team_id": "1610612743",
+            "away_team_name": "Denver Nuggets",
+            "prediction": 0.27,
+            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612760/primary/L/logo.svg",
+            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612743/primary/L/logo.svg"
         }
     }
 }
