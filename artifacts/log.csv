@@ -1293,3 +1293,5 @@ game_id,home_team_id,home_team_name,away_team_id,away_team_name,prediction,winne
 0042400233,1610612744,Golden State Warriors,1610612750,Minnesota Timberwolves,0.52,1,05-10-2025
 0042400224,1610612743,Denver Nuggets,1610612760,Oklahoma City Thunder,0.61,1,05-11-2025
 0042400204,1610612754,Indiana Pacers,1610612739,Cleveland Cavaliers,0.45,0,05-11-2025
+0042400214,1610612752,New York Knicks,1610612738,Boston Celtics,0.51,0,05-12-2025
+0042400234,1610612744,Golden State Warriors,1610612750,Minnesota Timberwolves,0.52,1,05-12-2025
