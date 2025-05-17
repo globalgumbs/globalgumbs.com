@@ -1,13 +1,3 @@
 {
-    "05/16/2025": {
-        "0042400216": {
-            "home_team_id": "1610612752",
-            "home_team_name": "New York Knicks",
-            "away_team_id": "1610612738",
-            "away_team_name": "Boston Celtics",
-            "prediction": 0.51,
-            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612752/primary/L/logo.svg",
-            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612738/primary/L/logo.svg"
-        }
-    }
+    "05/17/2025": {}
 }
