@@ -1,3 +1,13 @@
 {
-    "05/17/2025": {}
+    "05/18/2025": {
+        "0042400227": {
+            "home_team_id": "1610612760",
+            "home_team_name": "Oklahoma City Thunder",
+            "away_team_id": "1610612743",
+            "away_team_name": "Denver Nuggets",
+            "prediction": 0.28,
+            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612760/primary/L/logo.svg",
+            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612743/primary/L/logo.svg"
+        }
+    }
 }
