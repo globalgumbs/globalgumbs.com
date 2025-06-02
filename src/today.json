@@ -1,3 +1,13 @@
 {
-    "06/01/2025": {}
+    "06/02/2025": {
+        "0042400307": {
+            "home_team_id": "1610612752",
+            "home_team_name": "New York Knicks",
+            "away_team_id": "1610612754",
+            "away_team_name": "Indiana Pacers",
+            "prediction": 0.41,
+            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612752/primary/L/logo.svg",
+            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612754/primary/L/logo.svg"
+        }
+    }
 }
