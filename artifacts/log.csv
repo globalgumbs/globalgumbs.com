@@ -1313,3 +1313,4 @@ game_id,home_team_id,home_team_name,away_team_id,away_team_name,prediction,winne
 0042400315,1610612760,Oklahoma City Thunder,1610612750,Minnesota Timberwolves,0.31,0,05-28-2025
 0042400305,1610612752,New York Knicks,1610612754,Indiana Pacers,0.4,0,05-29-2025
 0042400306,1610612754,Indiana Pacers,1610612752,New York Knicks,0.46,0,05-31-2025
+0042400401,1610612760,Oklahoma City Thunder,1610612754,Indiana Pacers,0.26,1,06-05-2025
