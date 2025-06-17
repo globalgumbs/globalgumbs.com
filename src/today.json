@@ -1,13 +1,3 @@
 {
-    "06/16/2025": {
-        "0042400405": {
-            "home_team_id": "1610612760",
-            "home_team_name": "Oklahoma City Thunder",
-            "away_team_id": "1610612754",
-            "away_team_name": "Indiana Pacers",
-            "prediction": 0.26,
-            "home_team_logo": "https://cdn.nba.com/logos/nba/1610612760/primary/L/logo.svg",
-            "away_team_logo": "https://cdn.nba.com/logos/nba/1610612754/primary/L/logo.svg"
-        }
-    }
+    "06/17/2025": {}
 }

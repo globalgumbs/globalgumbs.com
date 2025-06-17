@@ -1317,3 +1317,4 @@ game_id,home_team_id,home_team_name,away_team_id,away_team_name,prediction,winne
 0042400402,1610612760,Oklahoma City Thunder,1610612754,Indiana Pacers,0.26,0,06-08-2025
 0042400403,1610612754,Indiana Pacers,1610612760,Oklahoma City Thunder,0.62,0,06-11-2025
 0042400404,1610612754,Indiana Pacers,1610612760,Oklahoma City Thunder,0.62,1,06-13-2025
+0042400405,1610612760,Oklahoma City Thunder,1610612754,Indiana Pacers,0.26,0,06-16-2025
